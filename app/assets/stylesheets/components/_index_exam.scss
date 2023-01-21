@@ -1,0 +1,35 @@
+.grey-bg {
+  background-color: #f5f7fa;
+}
+.card-title-1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+.card-text-1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-size: 1.2rem;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+  margin-top: 0;
+  margin-right: 0;
+}
+.card-exams {
+  width: 13rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.row {
+  justify-content: center;
+}
+.contenedor {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

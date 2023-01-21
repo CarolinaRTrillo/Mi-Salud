@@ -1,0 +1,21 @@
+<div class="recipes-wraper">
+  <div>
+    <%= render "shared/sidebar" %>
+</div>
+  <div class="container recipes-show-title">
+    <h1 class="d-flex justify-content-center mb-5">Receta Médica</h1>
+      <div class="card-recipe" style="border: groove; margin: 0 auto;">
+        <div class="card-details" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong style="font-size: 1.5rem">Fecha</strong></li>
+            <%= @recipe.date %>
+            <li class="list-group-item"><strong style="font-size: 1.5rem">Doctor/a</strong></li>
+            <%= @recipe.doctor_name %>
+            <%= link_to "Volver", recipes_path(@recipes), class: "btn btn-secondary" %>
+          </ul>
+        </div>
+        <div class="img-recipe">
+        <%= cl_image_tag @recipe.photo.key, id:"my-image", style:"height: 31rem;position:relative;left: -1rem;top: 0rem;"%>    </div>
+      </div>
+    </div>
+</div>

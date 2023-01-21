@@ -1,0 +1,81 @@
+<div class="recipes-wraper">
+  <div>
+    <%= render "shared/sidebar" %>
+</div>
+  <div class="card-recipes-principal ">
+    <div class=" card-secundaria-recipes">
+      <h1 class="titulo-1">Buenos dias, <%= current_user.name %> :</h1>
+        <h4 style="display: flex;justify-content: center;font-family: 'Montserrat';font-weight: 300;margin-bottom: -1rem">Estas son tus prescripciones</h4>
+        <div style="display: flex;height: 11rem; justify-content: center;">
+          <div class="secondary-barra" style="margin-top: 3rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
+            <div style="margin-right: 2rem;">
+              <h4 style="font-size: inherit;color: #6d6e6f;">Prescripciones totales : <%= @recipes.count %></h4>
+            </div>
+            <div style="margin-right: 2rem;">
+              <h4 style="font-size: inherit;color: #6d6e6f;">Porcentaje Salud : 50%</h4>
+            </div>
+            <div style="margin-right: 2rem;">
+              <h4 class="link-new-recipe" style="font-size: inherit;color: #6d6e6f;"> <%= link_to "Agregar prescripción", new_recipe_path, style: "font-size: inherit;color: #6d6e6f;" %> </h4>
+            </div>
+          </div>
+        </div>
+        <div class="general-card">
+          <div class="card-recipes-index">
+            <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
+              <%= image_tag "healthy-habits", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
+              <h4 class="card-text-recipes-1"> Tus prescripciones</h4>
+              <%= link_to "+", new_recipe_path, style: "text-align: end;display: flex;justify-content: center;margin-top: 0.52rem;font-size: 4rem;" %>
+            </div>
+                <div class="table-principal">
+                  <table class="table" style="font-weight: 100;font-family: 'Montserrat';;">
+                    <thead>
+                      <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Profesional</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% @recipes.each do |recipe| %>
+                      <tr>
+                        <th scope="row"><%= recipe.date %></th>
+                        <td><%= recipe.doctor_name %></td>
+                        <td><%= link_to recipe_path(recipe), data: {turbo_method: :delete, turbo_confirm: "Desea eliminar el elemento de manera permanente?"} do %>
+                          <i class="fa-solid fa-trash" style="color: #f05168"></i>
+                          <% end %>
+                          <%= link_to edit_recipe_path(recipe) do %>
+                          <i class="fa-solid fa-pencil" style="color: #ffcc07"></i>
+                          <% end %>
+                          <%= link_to recipe_path(recipe) do %>
+                          <i class="fa-solid fa-eye"></i>
+                        <% end %>
+                        </td>
+                      </tr>
+                      <% end %>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <div class="card-recipes-index">
+              <div class="avatar1" style="display: grid;grid-template-columns: 0fr 1fr;border-bottom: inset;height: 7rem;">
+                <%= image_tag "icono-recipes", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
+                <h4 class="card-text-recipes-3"> Ultimas prescripciones </h4>
+              </div>
+              <div class="minicards-principal">
+                <% @recipes.first(4).each do |recipe| %>
+                  <div class="col">
+                        <div class="card-recipes-index">
+                          <div class="avatar-2">
+                            <%= image_tag "icono-recipes", class:"avatar-1", style:"border-radius:50%;height: 3rem;margin-left: 1rem;margin-top: 1rem;"%>
+                            <h3 class="card-text-recipes-4"> <%= recipe.doctor_name %> </h3>
+                            <p class="card-text-recipes-5"> <%= recipe.date %> </p>
+                          </div>
+                        </div>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>

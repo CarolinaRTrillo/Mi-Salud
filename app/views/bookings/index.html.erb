@@ -1,0 +1,13 @@
+<h1>Bookings Homepage</h1>
+<div>
+  <%= month_calendar(events: @bookings) do |name, bookings| %>
+    <%= name %>
+
+    <% bookings.each do |booking| %>
+      <div class="booking">
+        <p><%= booking.name %></p>
+      </div>
+    <% end %>
+  <% end %>
+
+</div>

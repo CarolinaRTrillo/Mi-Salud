@@ -1,0 +1,27 @@
+<div class="sidenav">
+  <div class="menu">
+    <h1>
+      <button class="btn btn-secondary w-100 btn-sidebar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom: 1rem;">
+        <%= current_user.name %>
+      </button>
+    </h1>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <ul>
+          <li> <%= link_to "Mis datos", users_path, class: "dropdown-item collapse-item-datos" %> <li>
+          <li> <%= link_to "Cambiar contraseña", edit_user_registration_path, class: "dropdown-item collapse-item" %> <li>
+          <li> <%= link_to "Cerrar sesión", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item collapse-item" %> <li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="category"> <%= link_to "Mi salud", root_path%> </h1>
+    <h1 class="category"> <%= link_to "Turnos", bookings_path%> </h1>
+    <h1 class="category"> <%= link_to "Prescripciones", recipes_path%> </h1>
+    <h1 class="category"> <%= link_to "Examenes", exams_path%> </h1>
+    <h1 class="category"> <%= link_to "Habitos", habits_path%> </h1>
+  </div>
+
+  <!-- Page content -->
+  <div class="main">
+  </div>
+</div>

@@ -1,0 +1,24 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+@import "components/index_exam";
+@import "components/show_exam";
+@import "simple_calendar";
+@import "components/show_recipes";
+@import "components/sidebar";
+@import "components/icono";
+@import "pages/nosotros";
+@import "components/mi_salud";
+@import "components/show_habits";
+@import "components/habits_index";
+@import "components/user";
+@import "components/index_recipes";

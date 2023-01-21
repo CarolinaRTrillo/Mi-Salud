@@ -1,0 +1,93 @@
+.card-recipes-principal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-recipes-index {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 1rem;
+  margin-right: 0.2rem;
+}
+.table-principal {
+  padding: 2rem;
+}
+.recipes-wraper {
+  margin-top: 4.7rem;
+  display: flex;
+}
+.card-secundaria-recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 2rem;
+}
+.general-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.titulo-1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.titulo-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.text-center {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 370;
+}
+.avatar-1 {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+.card-text-recipes-1 {
+  margin-top: 2.6rem;
+  margin-left: -1rem;
+  font-size: 1.5rem;
+  font-family: "montserrat";
+}
+
+.card-text-recipes-3 {
+  margin-top: 2.6rem;
+  margin-left: 2.1rem;
+  font-family: "montserrat";
+  font-size: 1.5rem;
+}
+
+.card-text-recipes-4 {
+  margin-top: -2.2rem;
+  margin-left: 5.5rem;
+  font-family: "montserrat";
+  font-size: 1rem;
+}
+
+.card-text-recipes-5 {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.minicards-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 0.2rem;
+}
+
+.avatar-2 {
+  height: 9rem;
+  margin-top: 2rem;
+  border: groove;
+  border-radius: 1rem;
+}

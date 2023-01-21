@@ -1,0 +1,21 @@
+<div class="recipes-wraper">
+  <div>
+    <%= render "shared/sidebar" %>
+</div>
+<div class="user-profile vh-100">
+  <div class="column-nosotros">
+      <div class="card-nosotros-user", style="width: 27rem;height: 39.6rem;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);margin: 0.5rem;border-radius: 1.25rem;margin-top: 5rem;margin-bottom: 10rem;">
+        <%= image_tag "https://res.cloudinary.com/dcakvgdsg/image/upload/v1670686964/development/4n5bosu9lvxgpilbupsvff7bst0i.jpg", class:"radio-imagen-user" %>
+        <div class="contenedor-nosotros">
+          <h4> <strong>Nombre:</strong> <%= current_user.name %> </h4>
+          <h4> <strong>Apellido:</strong> <%= current_user.last_name %> </h4>
+          <h4> <strong>Fecha de nacimiento:</strong> <%= current_user.date_of_birth %> </h4>
+          <h4> <strong>Genero:</strong> <%= current_user.gender %> </h4>
+          <h4> <strong>Grupo sanguíneo:</strong> <%= current_user.blood_group %> </h4>
+          <h4> <strong>Tipo de sangre:</strong> <%= current_user.blood_type %> </h4>
+          <h4> <strong>Email:</strong> <%= current_user.email %> </h4>
+          <h4> <strong>Teléfono:</strong> <%= current_user.phone_number %> </h4>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="no-wrap">
+  <div>
+    <%= render "shared/sidebar" %>
+  </div>
+  <div class="contenedor mt-5 vh-100">
+    <div class="card mt-5" style="width: 50rem">
+      <div class="mb-5">
+        <h1>HABITOS PRINCIPALES</h1>
+        <h4>Personaliza tus habitos para poder llevar un registro de tu Salud</h4>
+        <div class="linea"></div>
+      </div>
+      <div>
+        <%= simple_form_for @habit do |f| %>
+          <%= f.label :Habito %>
+          <%= f.select :habit_type, collection: ["TABACO", "ALCOHOL", "CAFE", "ALIMENTACION", "EJERCICIO", "SUEÑO"] %>
+
+          <%= f.label :Cantidad %>
+          <%= f.input :quantity %>
+
+          <%= f.label :Frecuencia %>
+          <%= f.select :frequency, collection: ["Diario", "Fines de semana", "Habitual", "Ocacional", "Semanal", "Mensual"]%>
+
+          <div class="mt-5">
+          <%= f.submit :Crear, class:"btn btn-primary btn-block" %>
+          </div>
+        <% end %>
+        </div>
+    </div>
+  </div>
+</div>

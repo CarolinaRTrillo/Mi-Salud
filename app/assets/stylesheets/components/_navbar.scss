@@ -1,0 +1,35 @@
+.navbar-lewagon {
+  justify-content: space-around;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-lewagon .navbar-collapse {
+  font-size: 1.5rem;
+  flex-grow: 0;
+  margin-right: 100px;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 200px;
+  margin-left: 81px;
+  margin-right: 436px;
+}
+
+.navbar-lewagon a{
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 13rem;
+  background: rgb(255, 255, 255);
+  border-color:rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+}

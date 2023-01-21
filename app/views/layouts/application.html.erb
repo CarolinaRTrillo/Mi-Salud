@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Salud</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%#= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link rel="icon" type="images/png" href="/assets/logo_sin_nombre.png">
+        <!-- app/views/layouts/application.html.erb -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <!-- rename the-script into script after copy-paste -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="config-pagina">
+      <%= render "shared/navbar" %>
+      <%#=  render "shared/sidebar"%>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+    </div>
+  </body>
+    <%= render "shared/footer"%>
+</html>

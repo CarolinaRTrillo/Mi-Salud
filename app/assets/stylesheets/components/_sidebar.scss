@@ -1,0 +1,55 @@
+.recipe-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidenav {
+  margin-top: 0rem;
+  background-color: #062f43;
+  height: 100vh;
+  padding: 1.25rem;
+  position: fixed;
+  width: 16.5%;
+}
+
+.btn {
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+.collapse-item {
+  position: relative;
+  left: -2rem;
+  font-size: 1rem;
+  list-style: none;
+  color: #1f699e;
+  line-height: 2.2rem;
+}
+
+.collapse-item-datos {
+  margin-top: 1rem;
+  color: #1f699e;
+  position: relative;
+  left: -2rem;
+  font-size: 1rem;
+  list-style: none;
+  color: #1f699e;
+  line-height: 2.2rem;
+}
+
+.collapse {
+  margin-bottom: 1rem;
+}
+
+.btn-sidebar:hover {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,29 @@
+<div class="no-wrap">
+  <div>
+    <%= render "shared/sidebar" %>
+  </div>
+  <div class="contenedor mt-5 vh-100">
+    <div class="card mt-5" style="width: 50rem">
+      <div class="mb-5">
+        <h1>Examen actual</h1>
+        <h4>Actualiza los datos para poder llevar un mejor registro de tu Salud</h4>
+        <div class="linea"></div>
+      </div>
+      <div>
+        <%= simple_form_for @exam do |f| %>
+          <%= f.label :nombre %>
+          <%= f.input :name%>
+
+          <%= f.label :fecha%>
+          <%= f.input :date %>
+
+          <%= f.label :Lugar %>
+          <%= f.input :place%>
+          <div class="mt-5">
+          <%= f.submit :Crear, class:"btn btn-primary btn-block" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

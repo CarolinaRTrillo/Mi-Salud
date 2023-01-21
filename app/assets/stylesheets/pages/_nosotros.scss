@@ -1,0 +1,114 @@
+.column-nosotros {
+  float: left;
+  width: 25%;
+  margin-bottom: 1rem;
+  padding: 0 0.875rem;
+}
+
+.card-nosotros {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5rem;
+  border-radius: 1.25rem;
+  height: 35rem;
+  width: 20rem;
+  margin-top: 5rem;
+}
+
+.radio-imagen {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  width: 100%;
+  height: 16rem;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  padding: 3.125rem;
+  text-align: center;
+  color: black;
+  color: #4b4f54;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2rem;
+  position: relative;
+  left: -15.5rem;
+  top: 2rem;
+  width: 24rem;
+}
+
+.contenedor-nosotros {
+  padding: 0 1rem;
+  height: 5rem;
+}
+
+.contenedor-nosotros::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  margin-top: 1rem;
+  text-align: initial;
+  position: relative;
+  left: -1.9rem;
+  font-size: 1.3rem;
+}
+
+.description {
+  margin-top: 1rem;
+  display: flex;
+  margin-right: 0rem;
+  position: relative;
+  left: 0.18rem;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#caro {
+  width: 11rem;
+  position: relative;
+  left: 0.1rem;
+}
+
+.nosotros {
+  color: #8c9198;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2rem;
+  width: 35rem;
+  margin-top: 10rem;
+}
+
+.office-img {
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.radio-imagen-office {
+  width: 100%;
+  height: 50rem;
+}

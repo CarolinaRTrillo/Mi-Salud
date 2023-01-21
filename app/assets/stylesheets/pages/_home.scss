@@ -1,0 +1,193 @@
+// Specific CSS for your home-page
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-size: 1.2rem;
+  margin-right: 100px;
+  margin-top: 90px;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.p-footer {
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+hr {
+  margin-bottom: -30px;
+  height: 1px;
+  margin-left: 0%;
+  margin-right: 65%;
+  background-color: #6a7075;
+  margin-top: 52px;
+}
+
+body {
+  border-bottom: groove;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+
+.titulo-home {
+  font-size: 2.8125rem;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.contenedor {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: 0px;
+  transition: width 0.15s;
+  display: flex;
+}
+.contenedor_2 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: 0px;
+  transition: width 0.15s;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.image-1-home {
+  display: flex;
+  height: 250px;
+  justify-content: right;
+  margin-left: 325px;
+  margin-top: 330px;
+  position: relative;
+  left: -23px;
+  width: 416px;
+  height: 280px;
+  border-radius: 9px;
+}
+.image-2-home {
+  display: flex;
+  position: absolute;
+  height: 290px;
+  left: 40rem;
+  margin-top: 70px;
+  border-radius: 9px;
+}
+.image-3-home {
+  display: flex;
+  position: relative;
+  height: 496px;
+  margin-top: 13px;
+  left: -82px;
+}
+.image-4-home {
+  display: flex;
+  height: 450px;
+  justify-content: right;
+  margin-left: 0px;
+  margin-top: 60px;
+  width: 650px;
+}
+.card-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+.card-home2 {
+  color: #3f43fd;
+}
+.picture-home {
+  display: grid;
+  background-color: #ffffff;
+  margin-bottom: -35px;
+  height: 641px;
+}
+
+.contenedor-section {
+  transition: width 0.15s;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 116px;
+}
+.contenedor-section2 {
+  transition: width 0.15s;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 116px;
+}
+.contenedor-section3 {
+  transition: width 0.15s;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 116px;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 66px;
+}
+
+.py-5 {
+  padding-top: 7rem !important;
+  padding-bottom: 7rem !important;
+}
+
+.btn {
+  background: #2584c6;
+  border-color: #2483c6;
+}
+
+.picture-home2 {
+  display: grid;
+  background-color: #e3e5e6;
+  margin-bottom: -35px;
+  height: 662px;
+}
+.background-div {
+  background-color: #000000;
+  margin-top: 500px;
+}
+
+.titulo-home2 {
+  color: #edebea;
+}
+
+.prueba {
+  height: 1590px;
+}
+
+.overflow-auto {
+  overflow: auto;
+  max-height: 600px;
+}
+.footer {
+  background: #f4f4f4;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0px 50px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: #2584c6;
+  opacity: 0.6;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #2584c6;
+}

@@ -1,0 +1,59 @@
+.simple-calendar {
+  .today {
+    background-color: #FAF3DD;
+  }
+  .table-striped {
+    width: 80%;
+  }
+}
+
+.booking {
+  border-top: 1px solid #b2dba1;
+  border-bottom: 1px solid #b2dba1;
+  background-image: linear-gradient(to bottom, #dff0d8 0px, #c8e5bc 100%);
+  background-repeat: repeat-x;
+  color: #3c763d;
+  border-width: 1px;
+  font-size: .75em;
+  padding: 0 .75em;
+  line-height: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1px;
+}
+
+.booking:hover {
+  background: #6aa06b;
+  color: white;
+}
+
+.button-16 {
+  background-color: #f8f9fa !important;
+  border: 1px solid #f8f9fa !important;
+  border-radius: 4px !important;
+  color: #3c4043 !important;
+  cursor: pointer !important;
+  font-family: arial,sans-serif !important;
+  font-size: 14px !important;
+  height: 36px !important;
+  line-height: 27px !important;
+  min-width: 54px !important;
+  padding: 0 16px !important;
+  text-align: center !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  white-space: pre !important;
+}
+
+.button-16:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+.button-16:focus {
+  border-color: #4285f4;
+  outline: none;
+}
