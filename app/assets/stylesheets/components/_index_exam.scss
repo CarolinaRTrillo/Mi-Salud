@@ -1,35 +1,88 @@
-.grey-bg {
-  background-color: #f5f7fa;
-}
-.card-title-1 {
-  font-size: 1.25rem;
-  font-weight: 900;
+.card-exams-principal {
   display: flex;
-  justify-content: center;
-}
-.card-text-1 {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  font-size: 1.2rem;
-  font-family: Helvetica, Helvetica, sans-serif;
-  font-weight: 200;
-  margin-top: 0;
-  margin-right: 0;
+  margin-left: 17.3rem;
+
 }
 .card-exams {
-  width: 13rem;
-  border-radius: 0.4rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);  border-radius: 1rem;
+  border-style: ridge;
+
 }
 
-.row {
-  justify-content: center;
+.exams-wraper {
+  margin-top: 4.7rem;
+
 }
-.contenedor {
-  width: 100%;
-  flex-wrap: wrap;
+.card-secundaria-exams {
+  margin-bottom: 10rem;
+
+}
+.general-card-exams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.5rem;
+
+}
+.titulo-1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 3rem;
+}
+.titulo-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.text-center {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 370;
+}
+.avatar-1 {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+.card-text-exams-1 {
+  margin-top: 2.6rem;
+  font-family: "montserrat";
+}
+.overflow-auto{
+  max-height: 28rem;
+}
+
+.minicards-principal-exams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 0.2rem;
+}
+.card-exams-index {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 1rem;
+  margin-right: 0.2rem;
+}
+.card-text-exams-4 {
+  margin-top: -2.2rem;
+  margin-left: 5.5rem;
+  font-family: "montserrat";
+  font-size: 1rem;
+}
+
+.card-text-exams-5 {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.avatar-exams-2 {
+  height: 9rem;
+  margin-top: 1rem;
+  border: groove;
+  border-radius: 1rem;
 }
