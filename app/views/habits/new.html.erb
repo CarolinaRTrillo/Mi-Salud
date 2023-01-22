@@ -1,30 +1,34 @@
-<div class="no-wrap">
-  <div>
-    <%= render "shared/sidebar" %>
-  </div>
-  <div class="contenedor mt-5 vh-100">
-    <div class="card mt-5" style="width: 50rem">
-      <div class="mb-5">
-        <h1>HABITOS PRINCIPALES</h1>
-        <h4>Personaliza tus habitos para poder llevar un registro de tu Salud</h4>
-        <div class="linea"></div>
-      </div>
-      <div>
-        <%= simple_form_for @habit do |f| %>
-          <%= f.label :Habito %>
-          <%= f.select :habit_type, collection: ["TABACO", "ALCOHOL", "CAFE", "ALIMENTACION", "EJERCICIO", "SUEÑO"] %>
-
-          <%= f.label :Cantidad %>
-          <%= f.input :quantity %>
-
-          <%= f.label :Frecuencia %>
-          <%= f.select :frequency, collection: ["Diario", "Fines de semana", "Habitual", "Ocacional", "Semanal", "Mensual"]%>
-
-          <div class="mt-5">
-          <%= f.submit :Crear, class:"btn btn-primary btn-block" %>
-          </div>
-        <% end %>
+<script>
+  AOS.init();
+</script>
+<div class="habits-new-wraper">
+  <div class="card-habits-principal-new">
+    <div class=" card-secundaria-habits-new">
+      <div data-aos="flip-left">
+        <div class="card-habits-new" style="width: 50rem">
+        <div class="mb-5">
+          <h1 style="font-size: 2rem;font-family: montserrat;padding-top: 1.5rem;;font-weight: 500;">Hábitos principales</h1>
+          <h4 style="margin-top: 0%;font-family: montserrat;font-weight: 200;font-size: 1.2rem;">Personaliza tus habitos para poder llevar un registro de tu Salud</h4>
+          <div class="linea"></div>
         </div>
+        <div>
+          <%= simple_form_for @habit do |f| %>
+            <%= f.label :Habito %>
+            <%= f.select :habit_type, collection: ["TABACO", "ALCOHOL", "CAFE", "ALIMENTACION", "EJERCICIO", "SUEÑO"] %>
+
+            <%= f.label :Cantidad %>
+            <%= f.input :quantity %>
+
+            <%= f.label :Frecuencia, class: "etiqueta-frecuencia" %>
+            <%= f.select :frequency, collection: ["Diario", "Fines de semana", "Habitual", "Ocacional", "Semanal", "Mensual"]%>
+
+            <div class="mt-5">
+            <%= f.submit :Crear, class:"boton-1 btn btn-primary mb-4" %>
+            </div>
+          <% end %>
+          </div>
+      </div>
+      </div>
     </div>
   </div>
 </div>
