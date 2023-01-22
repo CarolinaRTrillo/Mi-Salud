@@ -1,4 +1,4 @@
-<div class="sidenav">
+<div class="sidenav" style="box-shadow: 25px 0 20px -20px rgb(0 0 0 / 45%);">
   <div class="menu">
     <h1>
       <button class="btn btn-secondary w-100 btn-sidebar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom: 1rem;">
@@ -14,11 +14,11 @@
         </ul>
       </div>
     </div>
-    <h1 class="category"> <%= link_to "Mi salud", root_path%> </h1>
-    <h1 class="category"> <%= link_to "Turnos", bookings_path%> </h1>
-    <h1 class="category"> <%= link_to "Prescripciones", recipes_path%> </h1>
-    <h1 class="category"> <%= link_to "Examenes", exams_path%> </h1>
-    <h1 class="category"> <%= link_to "Habitos", habits_path%> </h1>
+    <h1 class="category-sidebar"> <%= link_to "Mi salud", root_path, class: "color-letras-barra" %> </h1>
+    <h1 class="category-sidebar"> <%= link_to "Turnos", bookings_path, class: "color-letras-barra" %> </h1>
+    <h1 class="category-sidebar"> <%= link_to "Prescripciones", recipes_path, class: "color-letras-barra" %> </h1>
+    <h1 class="category-sidebar"> <%= link_to "Examenes", exams_path, class: "color-letras-barra" %> </h1>
+    <h1 class="category-sidebar"> <%= link_to "Habitos", habits_path, class: "color-letras-barra" %> </h1>
   </div>
 
   <!-- Page content -->
