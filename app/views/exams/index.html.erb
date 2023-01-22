@@ -17,13 +17,13 @@
           </div>
         </div>
         <div class="general-card-exams">
-          <div class="card-exams overflow-auto" stytle="max-height: 28rem;box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);">
+          <div class="card-exams overflow-auto" stytle="max-height: 29rem;box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);">
             <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
               <%= image_tag "healthy-habits", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
                   <h4 class="card-text-exams-1"> Tus hábitos</h4>
                   <%= link_to "+", new_exam_path, style: "text-align: center;margin-top: 1.3rem;font-size: 3rem;" %>
             </div>
-                <table class="table">
+                <table class="table" style="font-size: 0.8rem;">
           <thead>
             <tr>
               <th scope="col">FECHA</th>
@@ -32,8 +32,7 @@
               <th scope="col">ACCIONES</th>
             </tr>
           </thead>
-          <tbody class="table-group-divider" style="font-family: 'Montserrat';
-">
+          <tbody class="table-group-divider" style="font-family: 'Montserrat';">
             <% @exams.each do |exam|  %>
             <tr>
               <th scope="row" style="position: relative; text-align: left;"><%= exam.date%></th>

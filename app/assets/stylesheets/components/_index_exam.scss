@@ -6,6 +6,7 @@
 .card-exams {
   box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);  border-radius: 1rem;
   border-style: ridge;
+  padding: 1rem;
 
 }
 
@@ -21,6 +22,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 0.5rem;
+  margin-left: 3rem;
+
 
 }
 .titulo-1 {
@@ -49,7 +52,7 @@
   font-family: "montserrat";
 }
 .overflow-auto{
-  max-height: 28rem;
+  max-height: 29rem;
 }
 
 .minicards-principal-exams {
