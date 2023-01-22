@@ -15,14 +15,21 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
     <!-- rename the-script into script after copy-paste -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
     <div class="config-pagina">
       <%= render "shared/navbar" %>
-      <%#=  render "shared/sidebar"%>
+        <% if current_user %>
+        <% if params[:action] == "home" || params[:action] == "mi_salud" || params[:action] == "nosotros" || params[:action] == "contacto"%>
+        <% else %>
+          <%= render "shared/sidebar"%>
+        <% end %>
+      <% end %>
       <%= render "shared/flashes" %>
       <%= yield %>
     </div>
