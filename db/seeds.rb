@@ -50,23 +50,23 @@ puts "usuario: #{user2.email}"
 
 booking = Booking.create!(
   user_id: user1.id,
-  name: "Turno clinico",
+  name: "Turno clínico",
   start_time: "2023-01-15",
-  details: "Control clinico",
+  details: "Control clínico",
   address: "Esquina Segurola y Havanna"
 )
 
 booking1 = Booking.create!(
   user_id: user1.id,
-  name: "Turno clinico",
+  name: "Turno clínico",
   start_time: "2023-01-16",
-  details: "Control clinico",
+  details: "Control clínico",
   address: "Esquina Segurola y Havanna"
 )
 
 booking2 = Booking.create!(
   user_id: user1.id,
-  name: "Turno psicologo",
+  name: "Turno psicólogo",
   start_time: "2023-01-10",
   details: "Turno semanal",
   address: "Esquina Segurola y Havanna"
@@ -74,7 +74,7 @@ booking2 = Booking.create!(
 
 booking3 = Booking.create!(
   user_id: user2.id,
-  name: "Turno gastroenterologo",
+  name: "Turno gastroenterólogo",
   start_time: "2023-01-21",
   details: "Control anual de sistema digestivo",
   address: "Esquina Segurola y Havanna"
@@ -82,15 +82,15 @@ booking3 = Booking.create!(
 
 booking4 = Booking.create!(
   user_id: user2.id,
-  name: "Turno clinico",
+  name: "Turno clínico",
   start_time: "2023-01-25",
-  details: "Control clinico",
+  details: "Control clínico",
   address: "Alameda de la Federacion 233"
 )
 
 booking5 = Booking.create!(
   user_id: user2.id,
-  name: "Turno psoquiatra",
+  name: "Turno psiquiatra",
   start_time: "2023-01-15",
   details: "Turno mensual",
   address: "Alameda de la Federacion 233"
@@ -98,15 +98,15 @@ booking5 = Booking.create!(
 
 booking6 = Booking.create!(
   user_id: user2.id,
-  name: "Turno otorrinonaringologo",
+  name: "Turno otorrinonaringólogo",
   start_time: "2023-01-12",
-  details: "Control de oidos",
+  details: "Control de oídos",
   address: "Alameda de la Federacion 233"
 )
 
 booking7 = Booking.create!(
   user_id: user2.id,
-  name: "Turno kinesiologo",
+  name: "Turno kinesiólogo",
   start_time: "2023-01-13",
   details: "Rehabilitacion de contractura muscular",
   address: "Alameda de la Federacion 233"
@@ -120,7 +120,7 @@ exam = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
   name: "Tomografía",
-  place: "Clinica Parque"
+  place: "Clínica Parque"
 )
 file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
 exam.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
@@ -128,8 +128,8 @@ exam.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam1 = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Mamografia",
-  place: "Clinica Modelo"
+  name: "Mamografía",
+  place: "Clínica Modelo"
 )
 file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta2_vqmjfq.jpg")
 exam1.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
@@ -137,8 +137,8 @@ exam1.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam2 = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Ecografia",
-  place: "Clinica Modelo"
+  name: "Ecografía",
+  place: "Cliínica Modelo"
 )
 file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674138612/IMG_5110_xi4t6p.jpg")
 exam2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
@@ -146,8 +146,8 @@ exam2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam3 = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Colonoscopia",
-  place: "Clinica Modelo"
+  name: "Colonoscopía",
+  place: "Clínica Modelo"
 )
 file = URI.open("http://res.cloudinary.com/dz3nzxaiy/image/upload/v1674139294/IMG_5111_gd0n9f.jpg")
 exam3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
@@ -155,51 +155,51 @@ exam3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam4 = Exam.create!(
   user_id: user1.id,
   date: "2022-01-13",
-  name: "Radiografia de torax",
-  place: "Clinica Modelo"
+  name: "Radiografía de tórax",
+  place: "Clínica Modelo"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 exam4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 
 exam5 = Exam.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   date: "2022-06-05",
-  name: "Ecografia",
+  name: "Ecografía",
   place: "Maternidad oroño"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 exam5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam6 = Exam.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   date: "2022-05-18",
-  name: "Mamografia",
+  name: "Mamografía",
   place: "Sanatorio parque"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 exam6.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam7 = Exam.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   date: "2022-08-22",
-  name: "Analisis sangre",
-  place: "cibic"
+  name: "Análisis sangre",
+  place: "Cibic"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 exam7.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam8 = Exam.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   date: "2022-08-22",
-  name: "vacuna covid",
+  name: "Vacuna covid",
   place: "Hospital san felipe"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 exam8.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 
-puts "creados 8 examenes medicos"
+puts "creados 8 exámenes médicos"
 
 # HABITOS
 # habits: 4 a cada uno
@@ -227,14 +227,14 @@ habit2 = Habit.create!(
 
 habit3 = Habit.create!(
   user_id: user1.id,
-  habit_type: "Meditation",
+  habit_type: "MEDITACIÓN",
   quantity: 2,
   frequency: "Diario"
 )
 
 habit4 = Habit.create!(
   user_id: user2.id,
-  habit_type: "ALIMENTACION",
+  habit_type: "ALIMENTACIÓN",
   quantity: 3,
   frequency: "Mensual"
 )
@@ -279,27 +279,51 @@ recipe3 = Recipe.create!(
   date: "2023-01-07",
   doctor_name: "Alberto Parodi"
 )
-file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_6_l5uviu.jpg")
 recipe3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe4 = Recipe.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   date: "2023-02-10",
   doctor_name: "Ariana Ramirez"
 )
-file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_9_ar4lvl.jpg")
 recipe4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe5 = Recipe.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   date: "2023-03-25",
   doctor_name: "Raul Gonzalez"
 )
-file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_8_n5s9n6.jpg")
 recipe5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
+recipe6 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "German Sosa"
+)
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_5_imvsbo.jpg")
+recipe6.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
-puts "creadas 5 recetas medicas"
+recipe7 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "Marcelo Kranevitter"
+)
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_4_zkhnno.jpg")
+recipe7.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+recipe8 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "Matilde Gomez"
+)
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_7_pdwskw.jpg")
+recipe8.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+
+puts "creadas 9 recetas medicas"
 
 
 # REPORTES
@@ -313,7 +337,7 @@ report = Report.create!(
 )
 
 report1 = Report.create!(
-  user_id: user1.id,
+  user_id: user2.id,
   title: "Informe medico clinico",
   date: "2023-01-10",
   category: "Clinica"
