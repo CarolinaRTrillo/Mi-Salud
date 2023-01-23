@@ -1,8 +1,31 @@
-<%= simple_form_for @exam do |f| %>
+<script>
+  AOS.init();
+</script>
+<div class="exam-new-wraper">
+  <div class="card-exam-principal-new">
+    <div class=" card-secundaria-exam-new">
+      <div data-aos="flip-left">
+        <div class="card-exam-new" style="width: 50rem">
+        <div class="mb-5">
+          <h1 style="font-size: 2rem;font-family: montserrat;padding-top: 1.5rem;;font-weight: 500;">Examenes</h1>
+          <h4 style="margin-top: 0%;font-family: montserrat;font-weight: 200;font-size: 1.2rem;">Agregá un examen a tu historial.</h4>
+          <div class="linea-exam"></div>
+        </div>
+        <div>
+          <%= simple_form_for @exam do |f| %>
 
-<%= f.input :date%>
-<%= f.input :name %>
-<%= f.input :place %>
-<%= f.input :photo, as: :file %>
-<%= f.submit %>
-<% end  %>
+              <%= f.input :date%>
+              <%= f.input :name %>
+              <%= f.input :place %>
+              <%= f.input :photo, as: :file %>
+              <div class="mt-5">
+                <%= f.submit :Crear, class:"boton-1 btn btn-primary mb-4" %>
+              </div>
+          <% end  %>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

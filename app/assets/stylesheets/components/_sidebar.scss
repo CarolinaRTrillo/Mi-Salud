@@ -5,16 +5,18 @@
 
 .sidenav {
   margin-top: 0rem;
-  background-color: #062f43;
+  background-color: white;
   height: 100vh;
   padding: 1.25rem;
   position: fixed;
   width: 16.5%;
+  border-right: inset;
 }
 
 .btn {
   font-size: 1.7rem;
   margin-top: 1.5rem;
+  background-color: #0fa89f;
 }
 
 li {
@@ -30,18 +32,18 @@ a {
   left: -2rem;
   font-size: 1rem;
   list-style: none;
-  color: #1f699e;
+  color: black;
   line-height: 2.2rem;
 }
 
 .collapse-item-datos {
   margin-top: 1rem;
-  color: #1f699e;
+  color: black;
   position: relative;
   left: -2rem;
   font-size: 1rem;
   list-style: none;
-  color: #1f699e;
+  color: black;
   line-height: 2.2rem;
 }
 
@@ -50,6 +52,17 @@ a {
 }
 
 .btn-sidebar:hover {
-  background-color: white;
+  background-color: #2584c6;
   color: black;
+}
+
+.category-sidebar {
+  border-bottom: inset;
+}
+
+.color-letras-barra {
+  color: black;
+  font-family: "montserrat";
+  font-size: 1.3rem;
+  font-weight: 400;
 }
