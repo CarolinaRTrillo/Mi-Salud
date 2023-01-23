@@ -1,41 +1,38 @@
-<%# <%= simple_form_for @recipe do |f| %>
-  <%# <%= f.input :date %>
-  <%# <%= f.input :doctor_name %>
-  <%# <%= f.input :photo, as: :file %>
-  <%# <%= f.submit %>
-<%# <% end %>
-
-
+<script>
+  AOS.init();
+</script>
 <%= simple_form_for @recipe do |f| %>
-      <div class="row py-5 justify-content-center align-items-center ">
+      <div class="row py-5 justify-content-center align-items-center">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-          <div class="card shadow-2-strong" style="border-radius: 0.5rem;">
-            <div class="card-body p-5 text-center" style="box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4); border-radius: 8px 8px 8px 8px;">
+          <div data-aos="flip-left">
+            <div class="card shadow-2-strong" style="border-radius: 0.5rem;">
+              <div class="card-body-10 p-5 text-center" style="box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4); border-radius: 8px 8px 8px 8px;">
 
-              <h3 class="mb-5">Nueva Prescripción</h3>
+                <h3 class="mb-5">Nueva Prescripción</h3>
 
-              <div class="form-outline mb-4">
-                <%= f.input :date, label: "Fecha",
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "fecha", class:"form-control form-control-lg" } %>
+                <div class="form-outline mb-4">
+                  <%= f.input :date, label: "Fecha",
+                  required: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "fecha", class:"form-control form-control-lg" } %>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <%= f.input :doctor_name, label: "Nombre del profesional",
+                  required: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "nombre del doctor/a", class:"form-control form-control-lg" } %>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <%= f.input :photo, label: "Cargue el archivo",
+                  required: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "cargue el archivo", class:"form-control form-control-lg" } %>
+                </div>
+                <%= f.button :submit, "Guardar", class:"btn btn-primary btn-lg btn-block mt-4" %>
+                <%# <hr class="my-4"> %>
               </div>
-
-              <div class="form-outline mb-4">
-                <%= f.input :doctor_name, label: "Nombre del profesional",
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "nombre del doctor/a", class:"form-control form-control-lg" } %>
-              </div>
-
-              <div class="form-outline mb-4">
-                <%= f.input :photo, label: "Cargue el archivo",
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "cargue el archivo", class:"form-control form-control-lg" } %>
-              </div>
-              <%= f.button :submit, "Guardar", class:"btn btn-primary btn-lg btn-block mt-4" %>
-              <%# <hr class="my-4"> %>
             </div>
           </div>
         </div>
