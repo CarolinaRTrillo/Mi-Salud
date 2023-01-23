@@ -279,7 +279,7 @@ recipe3 = Recipe.create!(
   date: "2023-01-07",
   doctor_name: "Alberto Parodi"
 )
-file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_6_l5uviu.jpg")
 recipe3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe4 = Recipe.create!(
@@ -287,7 +287,7 @@ recipe4 = Recipe.create!(
   date: "2023-02-10",
   doctor_name: "Ariana Ramirez"
 )
-file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_9_ar4lvl.jpg")
 recipe4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe5 = Recipe.create!(
@@ -295,11 +295,35 @@ recipe5 = Recipe.create!(
   date: "2023-03-25",
   doctor_name: "Raul Gonzalez"
 )
-file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_8_n5s9n6.jpg")
 recipe5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
+recipe6 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "German Sosa"
+)
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_5_imvsbo.jpg")
+recipe6.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
-puts "creadas 5 recetas medicas"
+recipe7 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "Marcelo Kranevitter"
+)
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_4_zkhnno.jpg")
+recipe7.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+recipe8 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "Matilde Gomez"
+)
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/receta_7_pdwskw.jpg")
+recipe8.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+
+puts "creadas 9 recetas medicas"
 
 
 # REPORTES

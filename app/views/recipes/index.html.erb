@@ -17,11 +17,11 @@
           </div>
         </div>
         <div class="general-card">
-          <div class="card-recipes-index">
+          <div class="card-recipes-index overflow-auto" style="max-height: 29rem;box-shadow: 0px 25px 20px -20px rgb(0 0 0 / 45%), -25px 0 20px -20px rgb(0 0 0 / 45%);border-radius: 1rem;border-style: ridge;padding: 1rem;margin-right: 0.75rem;">
             <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
               <%= image_tag "healthy-habits", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
               <h4 class="card-text-recipes-1"> Tus prescripciones</h4>
-              <%= link_to "+", new_recipe_path, style: "text-align: end;display: flex;justify-content: center;margin-top: 0.52rem;font-size: 4rem;" %>
+              <%= link_to "+", new_recipe_path, style: "text-align: end;display: flex;justify-content: center;margin-top: 1.2rem;font-size: 3rem;" %>
             </div>
                 <div class="table-principal">
                   <table class="table" style="font-weight: 100;font-family: 'Montserrat';;">
@@ -53,7 +53,7 @@
                   </table>
                 </div>
             </div>
-            <div class="card-recipes-index">
+            <div class="card-recipes-index"  style="box-shadow: 0px 25px 20px -20px rgb(0 0 0 / 45%), -25px 0 20px -20px rgb(0 0 0 / 45%);border-radius: 1rem;border-style: ridge;padding: 1rem;">
               <div class="avatar1" style="display: grid;grid-template-columns: 0fr 1fr;border-bottom: inset;height: 7rem;">
                 <%= image_tag "icono-recipes", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
                 <h4 class="card-text-recipes-3"> Ultimas prescripciones </h4>

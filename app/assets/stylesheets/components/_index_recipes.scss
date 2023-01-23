@@ -5,8 +5,6 @@
   align-items: center;
 }
 .card-recipes-index {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 1rem;
   margin-right: 0.2rem;
 }
 .table-principal {
@@ -22,6 +20,9 @@
   align-items: stretch;
   width: 100%;
   padding: 2rem;
+  margin-left: 17rem;
+  margin-right: 1.4rem;
+  margin-bottom: 10rem;
 }
 .general-card {
   display: grid;
@@ -87,7 +88,7 @@
 
 .avatar-2 {
   height: 9rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: groove;
   border-radius: 1rem;
 }
