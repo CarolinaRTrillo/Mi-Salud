@@ -40,7 +40,7 @@
               <th scope="row" style="position: relative; text-align: left;"><%= exam.place%></th>
 
 
-              <td><%= link_to exam_path(exam), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el examen?"} do %>
+              <td><%= link_to exams_path(exam), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el examen?"} do %>
               <i class="fa-solid fa-trash" style="color: #f05168"></i>
               <% end %>
 
