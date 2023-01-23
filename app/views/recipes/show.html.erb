@@ -3,7 +3,7 @@
     <%= render "shared/sidebar" %>
 </div>
   <div class="container recipes-show-title">
-    <h1 class="d-flex justify-content-center mb-5">Receta Médica</h1>
+    <h1 class="d-flex justify-content-center mb-5">Prescripción Médica</h1>
       <div class="card-recipe" style="border: groove; margin: 0 auto;">
         <div class="card-details" style="width: 18rem;">
           <ul class="list-group list-group-flush">
@@ -15,7 +15,8 @@
           </ul>
         </div>
         <div class="img-recipe">
-        <%= cl_image_tag @recipe.photo.key, id:"my-image", style:"height: 31rem;position:relative;left: -1rem;top: 0rem;"%>    </div>
+          <%= cl_image_tag @recipe.photo.key, id:"my-image", style:"height: 31rem;position:relative;left: -1rem;top: 0rem;width: 21rem;" %>
+        </div>
       </div>
     </div>
 </div>
