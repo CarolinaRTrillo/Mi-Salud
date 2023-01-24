@@ -283,7 +283,7 @@ file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/r
 recipe3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe4 = Recipe.create!(
-  user_id: user2.id,
+  user_id: user1.id,
   date: "2023-02-10",
   doctor_name: "Ariana Ramirez"
 )
@@ -291,7 +291,7 @@ file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/r
 recipe4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe5 = Recipe.create!(
-  user_id: user2.id,
+  user_id: user1.id,
   date: "2023-03-25",
   doctor_name: "Raul Gonzalez"
 )
@@ -323,7 +323,7 @@ file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674498664/r
 recipe8.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 
-puts "creadas 9 recetas medicas"
+puts "creadas 8 recetas medicas"
 
 
 # REPORTES
