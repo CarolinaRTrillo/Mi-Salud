@@ -20,7 +20,7 @@
           <div class="card-exams overflow-auto" stytle="max-height: 29rem;box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);">
             <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
               <%= image_tag "healthy-habits", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
-                  <h4 class="card-text-exams-1"> Tus hábitos</h4>
+                  <h4 class="card-text-exams-1"> Tus examenes</h4>
                   <%= link_to "+", new_exam_path, style: "text-align: center;margin-top: 1.3rem;font-size: 3rem;" %>
             </div>
                 <table class="table" style="font-size: 0.8rem;">
@@ -60,22 +60,24 @@
             <div class="card-exams" style="box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);">
               <div class="avatar1" style="display: grid;grid-template-columns: 0fr 1fr;border-bottom: inset;height: 7rem;">
                 <%= image_tag "grafico-torta2", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
-                    <h4 class="card-text-exams-1" style="margin-left: 1.7rem"> Tus Resultados</h4>
-              </div>
-              <div class="minicards-principal-exams">
-                <% @exams.first(4).each do |exam| %>
-                  <div class="col">
-                        <div class="card-exams-index">
-                          <div class="avatar-exams-2">
-                            <%= image_tag "icono-recipes", class:"avatar-1", style:"border-radius:50%;height: 3rem;margin-left: 1rem;margin-top: 1rem;"%>
-                            <h3 class="card-text-exams-4"> <%= exam.date %> </h3>
-                            <p class="card-text-exams-5"> <%= exam.name %> </p>
-                          </div>
-                        </div>
-                  </div>
-                <% end %>
+                    <h4 class="card-text-exams-1" style="margin-left: 1.7rem"> Ultimos examenes</h4>
               </div>
 
+                <div class="minicards-principal-exams"  >
+                    <% @exams.first(4).each do |exam| %>
+                      <%= link_to exam_path(exam) do  %>
+                        <div class="col">
+                              <div class="card-exams-index"  >
+                                <div class="avatar-exams-2" >
+                                  <%= image_tag "icono-recipes", class:"avatar-1", style:"border-radius:50%;height: 3rem;margin-left: 1rem;margin-top: 1rem;"%>
+                                  <h3 class="card-text-exams-4"> <%= exam.date %> </h3>
+                                  <p class="card-text-exams-5"> <%= exam.name %> </p>
+                                </div>
+                              </div>
+                        </div>
+                      <% end %>
+                     <%end %>
+                </div>
             </div>
         </div>
 
