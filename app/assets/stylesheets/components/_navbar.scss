@@ -21,7 +21,7 @@
   margin-right: 436px;
 }
 
-.navbar-lewagon a{
+.navbar-lewagon a {
   color: black !important;
   text-decoration: none !important;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   width: 13rem;
   background: rgb(255, 255, 255);
-  border-color:rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -44,4 +44,12 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
+  
+.about-us {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.dropdown-menu a {
+  font-size: 1.3rem;
 }
