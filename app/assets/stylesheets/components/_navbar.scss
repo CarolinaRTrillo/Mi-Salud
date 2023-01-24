@@ -3,7 +3,7 @@
   background: rgb(255, 255, 255);
   position: fixed;
   top: 0;
-  left: 0;
+  left: -2rem;
   right: 0;
   z-index: 999;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
@@ -12,12 +12,12 @@
 .navbar-lewagon .navbar-collapse {
   font-size: 1.5rem;
   flex-grow: 0;
-  margin-right: 100px;
+  margin-right: -27px;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 200px;
-  margin-left: 81px;
+  margin-left: -10px;
   margin-right: 436px;
 }
 
@@ -35,6 +35,13 @@
 }
 
 .about-us{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: 'Montserrat';
+  display: flex;
+  margin-right: -5rem;
+  margin-left: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
