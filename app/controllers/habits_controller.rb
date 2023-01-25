@@ -3,6 +3,7 @@ class HabitsController < ApplicationController
 
   def index
     @habits = current_user.habits
+    @percentage_completed = percentage_completed
   end
 
   def new
@@ -42,4 +43,12 @@ class HabitsController < ApplicationController
   def habit_params
     params.require(:habit).permit(:habit_type, :quantity, :frequency)
   end
+
+  def percentage_completed
+    completed_habits = Habit.where(habit_type: true)
+    percentage_completed = (completed_habits.count / @habits.count) * 100
+  end
+
+  g = Gchart.line(:data => [1,2,3,4], :title => "My Line Chart")
+puts g.url
 end
