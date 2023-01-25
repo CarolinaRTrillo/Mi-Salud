@@ -47,6 +47,7 @@ a {
   transition: width 0.15s;
   display: flex;
 }
+
 .contenedor_2 {
   box-sizing: border-box;
   margin-left: auto;
@@ -56,6 +57,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .image-1-home {
   display: flex;
   height: 250px;
@@ -68,14 +70,16 @@ a {
   height: 280px;
   border-radius: 9px;
 }
+
 .image-2-home {
   display: flex;
   position: absolute;
   height: 290px;
-  left: 40rem;
+  left: 49rem;
   margin-top: 70px;
   border-radius: 9px;
 }
+
 .image-3-home {
   display: flex;
   position: relative;
@@ -83,6 +87,7 @@ a {
   margin-top: 13px;
   left: -82px;
 }
+
 .image-4-home {
   display: flex;
   height: 450px;
@@ -91,14 +96,17 @@ a {
   margin-top: 60px;
   width: 650px;
 }
+
 .card-home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
 }
+
 .card-home2 {
   color: #3f43fd;
 }
+
 .picture-home {
   display: grid;
   background-color: #ffffff;
@@ -112,18 +120,21 @@ a {
   margin-bottom: 5px;
   margin-left: 116px;
 }
+
 .contenedor-section2 {
   transition: width 0.15s;
   display: flex;
   margin-bottom: 5px;
   margin-left: 116px;
 }
+
 .contenedor-section3 {
   transition: width 0.15s;
   display: flex;
   margin-bottom: 5px;
   margin-left: 116px;
 }
+
 .mt-3 {
   margin-top: 1rem !important;
   margin-bottom: 66px;
@@ -145,6 +156,7 @@ a {
   margin-bottom: -35px;
   height: 662px;
 }
+
 .background-div {
   background-color: #000000;
   margin-top: 500px;
@@ -162,6 +174,7 @@ a {
   overflow: auto;
   max-height: 600px;
 }
+
 .footer {
   background: #f4f4f4;
   display: flex;
@@ -174,10 +187,12 @@ a {
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .footer-links {
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
   color: #2584c6;
   opacity: 0.6;
@@ -185,9 +200,11 @@ a {
   font-size: 24px;
   padding: 0px 10px;
 }
+
 .footer-links a:hover {
   opacity: 1;
 }
+
 .footer .fa-heart {
   color: #2584c6;
 }
