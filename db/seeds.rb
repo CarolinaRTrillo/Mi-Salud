@@ -22,7 +22,7 @@ user1 = User.create!(
 )
 # photo.attach nos hace usar cloudinary: config.active_storage.service = :cloudinary (linea 38 del development.rb)
 
-file = URI.open("https://avatars.githubusercontent.com/u/96851608?v=4")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674609097/Foto_perfil_nljvbn.jpg")
 user1.photo.attach(io: file, filename: "fran.png", content_type: "image/png")
 puts "usuario: #{user1.email}"
 
@@ -40,7 +40,7 @@ user2 = User.create!(
   blood_group: "0",
   blood_type: "-"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/michelle_timwly.jpg")
 user2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 puts "usuario: #{user2.email}"
 
