@@ -15,10 +15,10 @@ user1 = User.create!(
   weight: "65",
   height: "165",
   date_of_birth: "1989-04-08",
-  gender: "male",
+  gender: 1,
   phone_number: "+5493435430718",
-  blood_group: "0",
-  blood_type: "-"
+  blood_group: 0,
+  blood_type: 0
 )
 # photo.attach nos hace usar cloudinary: config.active_storage.service = :cloudinary (linea 38 del development.rb)
 
@@ -35,10 +35,10 @@ user2 = User.create!(
   weight: "65",
   height: "165",
   date_of_birth: "1999-09-17",
-  gender: "female",
+  gender: 0,
   phone_number: "+5493435430799",
-  blood_group: "0",
-  blood_type: "-"
+  blood_group: 0,
+  blood_type: 0
 )
 file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/michelle_timwly.jpg")
 user2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
