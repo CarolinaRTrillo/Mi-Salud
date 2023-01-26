@@ -9,6 +9,8 @@ gem "bootstrap"
 
 gem "geocoder"
 
+gem "chartkick"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
