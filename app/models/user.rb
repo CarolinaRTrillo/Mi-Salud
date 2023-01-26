@@ -10,4 +10,7 @@ class User < ApplicationRecord
   has_many :habits, dependent: :destroy
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+enum :blood_group, { "negativo" => 0, "positivo" => 1}
+enum :blood_type, { "A" => 1, "B" => 2, "AB" => 3, "cero" => 0}
+enum :gender, { "femenino" => 0, "masculino" => 1}
 end
