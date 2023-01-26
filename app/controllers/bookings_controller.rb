@@ -5,10 +5,17 @@ class BookingsController < ApplicationController
     # Scope your query to the dates being shown:
     start_date = params.fetch(:start_time, Date.today).to_date
 
-    @bookings = Booking.all
     # For a monthly view:
     # @bookings = Booking.where(start_time: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
     # @bookings = Booking.where(start_time: start_date.beginning_of_week..start_date.end_of_week)
+    # The `geocoded` scope filters only flats with coordinates
+    @markers = @bookings.geocoded.map do |booking|
+      {
+        lat: booking.latitude,
+        lng: booking.longitude
+      }
+      p @markers
+    end
   end
 
   def show
