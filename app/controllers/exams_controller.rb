@@ -37,7 +37,7 @@ class ExamsController < ApplicationController
   private
 
   def exam_params
-    params.require(:exam).permit(:name, :date, :place)
+    params.require(:exam).permit(:name, :date, :place, :photo)
   end
 
   def exam_id

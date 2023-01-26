@@ -1,5 +1,7 @@
 .simple-calendar {
   width:90%;
+  margin: 0 auto;
+  margin-left: 192px;
   .table {
     // overflow: hidden !important;
     min-height: 60vh;
@@ -14,6 +16,7 @@
 .calendar-sizing {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 200px;
 }
 
 .booking {
@@ -105,12 +108,13 @@
   padding: 2rem;
 }
 
-.titulo-1{
+.titulo-1-calendar{
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  margin-left: 190px;
 }
 .titulo-2{
   font-family: 'Montserrat', sans-serif;

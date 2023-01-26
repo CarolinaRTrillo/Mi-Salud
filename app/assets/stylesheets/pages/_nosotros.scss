@@ -1,8 +1,37 @@
-.column-nosotros {
+.column-nosotros-1 {
+  float: left;
+  width: 25%;
+  padding: 0 0.875rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-bottom: 10rem;
+}
+
+.column-nosotros-2 {
   float: left;
   width: 25%;
   margin-bottom: 1rem;
   padding: 0 0.875rem;
+  margin-top: -30rem;
+  margin-left: 48rem;
+}
+
+.column-nosotros-3 {
+  float: left;
+  width: 25%;
+  margin-bottom: 1rem;
+  padding: 0 0.875rem;
+  margin-top: -8.5rem;
+  margin-left: 6rem;
+}
+
+.column-nosotros-4 {
+  float: left;
+  width: 25%;
+  padding: 0rem 0.875rem;
+  margin-top: -21rem;
+  margin-left: 48rem;
+  margin-bottom: 8rem;
 }
 
 .card-nosotros {
@@ -15,11 +44,10 @@
 }
 
 .radio-imagen {
-  border-top-left-radius: 20px !important;
-  border-top-right-radius: 20px !important;
-  width: 100%;
-  height: 16rem;
-  margin-bottom: 1rem;
+  border-top-left-radius: 1rem !important;
+  border-bottom-left-radius: 1rem !important;
+  width: 15rem;
+  height: 18.9rem;
 }
 
 .about-section {
@@ -59,12 +87,12 @@
   font-size: 1.3rem;
 }
 
-.description {
+.description-card-p-nosotros-10 {
   margin-top: 1rem;
   display: flex;
   margin-right: 0rem;
-  position: relative;
-  left: 0.18rem;
+  padding-right: 4rem;
+  margin-left: 0.19rem;
 }
 
 .button {
@@ -91,23 +119,86 @@
 
 .nosotros {
   color: #8c9198;
-  font-family: "Open Sans";
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: "montserrat";
+  font-size: 1.3rem;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 2rem;
   width: 35rem;
-  margin-top: 10rem;
+  margin-top: -5.6rem;
+  margin-left: 3.5rem;
 }
 
-
-
-.contenedor-principal {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+.nosotros-header {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  font-size: 3.5rem;
 }
 
 .radio-imagen-office {
-  width: 100%;
-  height: 50rem;
+  width: 64rem;
+  height: 49rem;
+  margin-top: -24.3rem;
+  margin-left: 28rem;
+  margin-bottom: 5rem;
+}
+
+.cards-div-nosotros {
+  margin-top: 3rem !important;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card-body-nosotros {
+  padding-left: 5.3rem;
+}
+
+.card-nosotros-tamaño {
+  width: 37rem;
+  height: 19rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.card-title-nosotros-10 {
+  margin-top: 1rem;
+}
+
+.card-p-nosotros-10 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  font-size: 1.2rem;
+  margin-right: 6.25rem;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+  margin-top: 1rem;
+  margin-left: -5.54rem;
+}
+
+.card-nosotros-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#card-title-caro {
+  margin-left: -2.54rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  font-size: 1.2rem;
+  margin-right: 6.25rem;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+#description-card-caro {
+  margin-top: 1rem;
+  display: flex;
+  margin-right: 0rem;
+  padding-right: 4rem;
+  margin-left: 0.32rem;
 }

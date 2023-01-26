@@ -20,6 +20,8 @@
               <%= f.input :photo, as: :file %>
               <div class="mt-5">
                 <%= f.submit :Crear, class:"boton-1 btn btn-primary mb-4" %>
+                <%= link_to "Volver", exams_path(@exams), class: "boton-1 btn btn-secondary mb-4" %>
+
               </div>
           <% end  %>
 

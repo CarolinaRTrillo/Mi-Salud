@@ -1,23 +1,26 @@
 <div class="bookings-wraper">
   <div class="card-bookings-principal ">
     <div class=" card-secundaria-bookings">
-      <h1 class="titulo-1">Buenos días, <%= current_user.name %> :</h1>
-        <h4 style="display: flex;justify-content: center;font-family: 'Montserrat';font-weight: 300;margin-bottom: -1rem">Estos son tus hábitos</h4>
+      <h1 class="titulo-1-calendar">Buenos días, <%= current_user.name %> :</h1>
+      <h4 style="display: flex;justify-content: center;font-family: 'Montserrat';font-weight: 300;margin-bottom: -1rem;margin-left: 190px;">Estos son tus hábitos</h4>
 
-        <div class="general-card-bookings-1-2">
-          <div class="calendario">
-            <%= month_calendar(events: @bookings) do |name, bookings| %>
-              <%= name %>
+      <div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div>
+            <div class="calendario">
+              <%= month_calendar(events: @bookings) do |name, bookings| %>
+                <%= name %>
 
-              <% bookings.each do |booking| %>
-
+                <% bookings.each do |booking| %>
                   <%= link_to booking.name, booking_path(booking), class:"booking" %>
 
+                <% end %>
               <% end %>
-            <% end %>
 
+            </div>
           </div>
+        </div>
       </div>
-      </div>
+    </div>
   </div>
 </div>
