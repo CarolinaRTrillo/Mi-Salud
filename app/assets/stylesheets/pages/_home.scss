@@ -76,7 +76,7 @@ a {
   display: flex;
   position: absolute;
   height: 290px;
-  left: 49rem;
+  left: 39rem;
   margin-top: 70px;
   border-radius: 9px;
 }
@@ -208,4 +208,13 @@ a {
 
 .footer .fa-heart {
   color: #2584c6;
+}
+
+.card-text-1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-size: 1.2rem;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
 }

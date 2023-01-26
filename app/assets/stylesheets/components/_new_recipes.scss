@@ -1,0 +1,44 @@
+.recipe-new-wraper {
+  margin-top: 4.7rem;
+  display: flex;
+  padding-left: 15.55rem;
+}
+
+.card-recipe-new {
+  margin-bottom: 10rem;
+  text-align: center;
+  font-family: "Montserrat";
+  padding: 2rem;
+}
+
+.card-secundaria-recipe-new {
+  margin-bottom: 10rem;
+  display: flex;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.card-recipe-principal-new {
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.card-recipe-new {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 1rem;
+}
+
+.linea-recipe {
+  height: 1px;
+}
+
+.boton-1 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0fa89f;
+}
+
+.boton-1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0fa89f;
+}
