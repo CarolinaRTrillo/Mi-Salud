@@ -12,8 +12,8 @@
   width: 25%;
   margin-bottom: 1rem;
   padding: 0 0.875rem;
-  margin-top: -40.5rem;
-  margin-left: 27.6rem;
+  margin-top: -30rem;
+  margin-left: 48rem;
 }
 
 .column-nosotros-3 {
@@ -21,17 +21,17 @@
   width: 25%;
   margin-bottom: 1rem;
   padding: 0 0.875rem;
-  margin-top: -41.5rem;
-  margin-left: 49.2rem;
+  margin-top: -8.5rem;
+  margin-left: 6rem;
 }
 
 .column-nosotros-4 {
   float: left;
   width: 25%;
   padding: 0rem 0.875rem;
-  margin-top: -41.5rem;
-  margin-left: 70.9rem;
-  margin-bottom: 9rem;
+  margin-top: -21rem;
+  margin-left: 48rem;
+  margin-bottom: 8rem;
 }
 
 .card-nosotros {
@@ -92,7 +92,7 @@
   display: flex;
   margin-right: 0rem;
   padding-right: 4rem;
-  margin-left: 0.33rem;
+  margin-left: 0.19rem;
 }
 
 .button {
@@ -174,5 +174,31 @@
   font-family: Helvetica, Helvetica, sans-serif;
   font-weight: 200;
   margin-top: 1rem;
+  margin-left: -5.54rem;
+}
+
+.card-nosotros-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#card-title-caro {
   margin-left: -2.54rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  font-size: 1.2rem;
+  margin-right: 6.25rem;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+#description-card-caro {
+  margin-top: 1rem;
+  display: flex;
+  margin-right: 0rem;
+  padding-right: 4rem;
+  margin-left: 0.32rem;
 }

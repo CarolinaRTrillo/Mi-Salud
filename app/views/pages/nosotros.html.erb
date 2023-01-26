@@ -1,72 +1,95 @@
+<script>
+  AOS.init();
+</script>
 <div class="contenedor-principal mt-5">
   <div class="about mt-5 cards-div-nosotros">
     <h1 class="nosotros-header">Quienes somos</h1>
     <p class="nosotros">Sólo mediante el compromiso diario con lo que hacemos y con el entorno que nos rodea podemos seguir hacia delante. Además de desarrollar nuestro modelo de negocio, debemos ir más allá y esforzarnos para dejar un legado a la sociedad. El legado de Mi Salud es la construcción de de un modelo de gestion de mejora continua que satisfaga las necesidades de las personas y que contribuya a conseguir una sociedad más sana, eficiente y productiva.</p>
     <%# <div class="office-img"> %>
       <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674605688/foto-nosotros_ev06gj.png", class:"radio-imagen-office"  %>
-    <%# </div> %>
+  </div>
 
   <%# ACA EMPIEZAN LAS CARDS %>
 
-    <%# <div class="column-nosotros-1">
-      <div class="card-nosotros">
-        <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/caro_xzncd8.png", class:"radio-imagen" %>
-        <%# <div class="contenedor-nosotros">
-          <h2>Carolina Ramirez</h2>
-          <p class="title" id="caro">Co-founder & CEO</p>
-          <p class="description">International experience, working and learning in multicultural environments. Passionate about IT solutions.</p>
-        </div>
-      </div>
-    </div> %>
-<div class="column-nosotros-1">
-  <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/caro_xzncd8.png", class:"radio-imagen" %>
-      </div>
-      <div class="col-md-8">
-        <div class="card-body-nosotros">
-          <h2 class="card-title-nosotros-10">Caroloina Ramírez</h2>
-          <p class="card-p-nosotros-10">Co-founder & CEO</p>
-          <p class="description-card-p-nosotros-10">International experience, working and learning in multicultural environments. Passionate about IT solutions.</p>
+  <div class="cards-nosotros-div">
+    <div data-aos="flip-up">
+      <div class="column-nosotros-1">
+        <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/caro_xzncd8.png", class:"radio-imagen" %>
+            </div>
+              <div class="col-md-8">
+                <div class="card-body-nosotros">
+                  <h2 class="card-title-nosotros-10">Caroloina Ramírez</h2>
+                  <p id="card-title-caro">Co-founder & CEO</p>
+                  <p id="description-card-caro">International experience, working and learning in multicultural environments. Passionate about IT solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-    <%# <div class="column-nosotros-2">
-      <div class="card-nosotros">
-        <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/gaston_unqdqg.jpg", class:"radio-imagen" %>
-        <%# <div class="contenedor-nosotros">
-          <h2>Gastón Henrich</h2>
-          <p class="title">Fullstack Dev</p>
-          <p class="description">Hi my name is Gaston Henrich, I am 32 years old and I am from argentina, currently living in Australia. I am passionate and curious about technology .</p>
+    <div data-aos="flip-up">
+      <div class="column-nosotros-2">
+      <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674609097/Foto_perfil_nljvbn.jpg", class:"radio-imagen" %>
+          </div>
+            <div class="col-md-8">
+              <div class="card-body-nosotros">
+                <h2 class="card-title-nosotros-10">Francisco Giacchi</h2>
+                <p class="card-p-nosotros-10">Fullstack Dev</p>
+                <p class="description-card-p-nosotros-10">International Master in Business Administration. I am passionate about solving problems, analysing them from different perspectives.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div> %>
+      </div>
+    </div>
 
-    <%# <div class="column-nosotros-3">
-      <div class="card-nosotros">
-        <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674609097/Foto_perfil_nljvbn.jpg", class:"radio-imagen" %>
-        <%# <div class="contenedor-nosotros">
-          <h2>Francisco Giacchi</h2>
-          <p class="title">Fullstack Dev</p>
-          <p class="description">International Master in Business Administration. I am passionate about solving problems, analysing them from different perspectives.</p>
+    <div data-aos="flip-up">
+      <div class="column-nosotros-3">
+      <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/gaston_unqdqg.jpg", class:"radio-imagen" %>
+          </div>
+            <div class="col-md-8">
+              <div class="card-body-nosotros">
+                <h2 class="card-title-nosotros-10">Gastón Henrich</h2>
+                <p class="card-p-nosotros-10">Fullstack Dev</p>
+                <p class="description-card-p-nosotros-10">Hi, my name is Gaston Henrich, I am 32 years old and I am from argentina, currently living in Australia. I am passionate and curious about technology.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div> %>
+      </div>
+    </div>
 
-    <%# <div class="column-nosotros-4">
-      <div class="card-nosotros">
-        <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/michelle_timwly.jpg", class:"radio-imagen" %>
-        <%# <div class="contenedor-nosotros">
-          <h2>Michelle Madrid</h2>
-          <p class="title">Fullstack Dev</p>
-          <p class="description">Engineering student at Pontificia Universidad Católica de Chile. I like nature, watching films and going out with friends.</p>
+    <div data-aos="flip-up">
+      <div class="column-nosotros-4">
+      <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/michelle_timwly.jpg", class:"radio-imagen" %>
+          </div>
+            <div class="col-md-8">
+              <div class="card-body-nosotros">
+                <h2 class="card-title-nosotros-10">Michelle Madrid</h2>
+                <p class="card-p-nosotros-10">Fullstack Dev</p>
+                <p class="description-card-p-nosotros-10">Engineering student at Pontificia Universidad Católica de Chile. I like nature, watching films and going out with friends.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div> %>
+      </div>
+    </div>
   </div>
 </div>
