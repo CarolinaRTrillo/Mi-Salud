@@ -27,14 +27,21 @@
   .list-group-flush{
     align-items: start;
     font-family: 'Montserrat';
+    margin-left: 3rem;
+    margin-top: 2rem;
   }
+
+  .btn-show{
+    margin-top: 8.2rem;
+  }
+
   .card-booking-1 {
     display: flex;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem;
-    width: 30rem;
+    width: 71.5rem;
     position: relative;
     left: 4rem;
     top: -6rem;
@@ -47,8 +54,9 @@
   }
 
   .titulo-show-booking{
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 15rem;
+    margin-bottom: 5rem;
   }
 
   .card-booking-2 {
@@ -80,8 +88,9 @@
     top: 11rem;
   }
   .card-details-booking {
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
   .img-booking{
     border-radius: 1rem;
