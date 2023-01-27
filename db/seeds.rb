@@ -122,7 +122,7 @@ exam = Exam.create!(
   name: "Tomografía",
   place: "Clínica Parque"
 )
-file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674852655/tomografia_utxrk7.png")
 exam.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam1 = Exam.create!(
@@ -131,7 +131,7 @@ exam1 = Exam.create!(
   name: "Mamografía",
   place: "Clínica Modelo"
 )
-file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta2_vqmjfq.jpg")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674852791/mamografia_k4wnw3.jpg")
 exam1.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam2 = Exam.create!(
@@ -140,7 +140,7 @@ exam2 = Exam.create!(
   name: "Ecografía",
   place: "Cliínica Modelo"
 )
-file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674138612/IMG_5110_xi4t6p.jpg")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674852861/ecografia_s267bo.jpg")
 exam2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam3 = Exam.create!(
@@ -149,7 +149,7 @@ exam3 = Exam.create!(
   name: "Colonoscopía",
   place: "Clínica Modelo"
 )
-file = URI.open("http://res.cloudinary.com/dz3nzxaiy/image/upload/v1674139294/IMG_5111_gd0n9f.jpg")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674852987/colonoscopia_g4lgjo.jpg")
 exam3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam4 = Exam.create!(
@@ -158,7 +158,7 @@ exam4 = Exam.create!(
   name: "Radiografía de tórax",
   place: "Clínica Modelo"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674853054/radriografia_torax_xo4bga.jpg")
 exam4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 

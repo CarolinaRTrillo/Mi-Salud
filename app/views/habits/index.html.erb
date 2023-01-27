@@ -63,7 +63,22 @@
                 <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610050/grafico-torta2_jvugzk.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
                     <h4 class="card-text-habitos-1" style="margin-left: 1.7rem"> Tus Resultados</h4>
               </div>
-
+              <div class="grafico-dona-habitos">
+              <div>
+               <table class="table-medical-habito-2">
+             <tbody>
+               <% @habits.each do |habit|  %>
+                 <tr>
+                   <th scope="row row-medical" style="font-weight: 200"><%= habit.habit_type %></th>
+                 </tr>
+               <% end %>
+             </tbody>
+           </table>
+              </div>
+                <% @habits.last(1).each do |habit|  %>
+                  <%= pie_chart Habit.group(:habit_type).limit(4).sum(:user_id), legend: false, colors: ["#FF5757", "#03989E", "#545454", "#00C2CB"], donut: true %>
+                <% end %>
+              </div>
             </div>
         </div>
       </div>
