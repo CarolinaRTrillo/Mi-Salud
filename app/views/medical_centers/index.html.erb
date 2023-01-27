@@ -12,7 +12,6 @@
            <h2 class="mt-3" id="h2-home2">Últimos examenes</h2>
          </div>
          <div>
-         <%#= image_tag "exam", class:"image-home2"%>
            <table class="table-medical">
              <thead>
                <tr>
@@ -24,16 +23,20 @@
              <tbody>
                <% @exams.each do |exam| %>
                 <tr>
-                  <th scope="row row-medical"><%= exam.date%></th>
-                  <th scope="row row-medical"><%= exam.name%></th>
-                  <th scope="row row-medical"><%= exam.place%></th>
+                  <th scope="row row-medical" style="font-weight: 200;"><%= exam.date%></th>
+                  <th scope="row row-medical" style="font-weight: 200;"><%= exam.name%></th>
+                  <th scope="row row-medical" style="font-weight: 200;"><%= exam.place%></th>
                 </tr>
                <% end %>
              </tbody>
              </table>
          </div>
-         <h4 id="h4-home2"><%= link_to "Ver todos", exams_path%></h4>
-
+         <div class="medical-imag">
+           <%= image_tag ("https://res.cloudinary.com/dmbtujt7l/image/upload/c_scale,w_117/v1674778200/2_tqeqea.png") %>
+         </div>
+         <div >
+           <h4><%= link_to "Ver todos", exams_path, class:"boton-ver btn btn-primary"%></h4>
+         </div>
        </div>
       </div>
 
@@ -44,7 +47,7 @@
            <h2 class="mt-3" id="h2-home2">Últimas prescripciones</h2>
          </div>
           <div>
-            <table class="table-medical">
+            <table class="table-medical" style="margin-left: -12rem;">
               <thead>
                 <tr>
                   <th scope="col">Fecha</th>
@@ -54,14 +57,19 @@
               <tbody>
                 <% @recipes.each do |recipe|  %>
                   <tr>
-                    <th scope="row row-medical"><%= recipe.date%></th>
-                    <th scope="row row-medical"><%= recipe.doctor_name%></th>
+                    <th scope="row row-medical" style="font-weight: 200;"><%= recipe.date%></th>
+                    <th scope="row row-medical" style="font-weight: 200;"><%= recipe.doctor_name%></th>
                   </tr>
                 <% end %>
               </tbody>
             </table>
           </div>
-          <h4 id="h4-home2"><%= link_to "Ver todos", recipes_path%> </h4>
+         <div class="medical-imag">
+           <%= image_tag ("https://res.cloudinary.com/dmbtujt7l/image/upload/c_scale,w_117/v1674778200/1_chcckf.png") %>
+         </div>
+         <div >
+           <h4><%= link_to "Ver todos", recipes_path, class:"boton-ver btn btn-primary"%></h4>
+         </div>
         </div>
       </div>
     </div>
@@ -76,20 +84,32 @@
            <h2 class="mt-3" id="h2-home2">Estado de tus hábitos</h2>
          </div>
          <div>
-           <table class="table-medical">
+         <table class="table-medical-habito">
              <thead>
+               <tr>
+                 <th scope="col">Habitos</th>
+               </tr>
              </thead>
              <tbody>
                <% @habits.each do |habit|  %>
                  <tr>
-                   <th scope="row row-medical"><%= pie_chart Habit.group(:habit_type).limit(4).sum(:user_id), donut: true %></th>
-                   <th scope="row row-medical"><i class="">Completos</i></th>
+                   <th scope="row row-medical" style="font-weight: 200"><%= habit.habit_type %></th>
                  </tr>
                <% end %>
              </tbody>
            </table>
          </div>
-         <h4 id="h4-home2"><%= link_to "Ver todos", habits_path%> </h4>
+         <div class="grafico-dona">
+               <% @habits.last(1).each do |habit|  %>
+
+                <%= pie_chart Habit.group(:habit_type).limit(4).sum(:user_id), legend: false, donut: true, colors: ["#FF5757", "#03989E", "#545454", "#00C2CB"] %>
+
+               <% end %>
+
+         </div>
+         <div >
+           <h4><%= link_to "Ver todos", habits_path, class:"boton-ver btn btn-primary"%></h4>
+         </div>
        </div>
       </div>
 
@@ -100,7 +120,8 @@
            <h2 class="mt-3" id="h2-home2">Próximos turnos</h2>
          </div>
          <div>
-           <table class="table-medical">
+           <table class="table-medical" style="margin-left: -11rem;
+}">
              <thead>
                <tr>
                  <th scope="col">Fecha</th>
@@ -110,14 +131,19 @@
              <tbody>
                <% @bookings.each do |booking|  %>
                  <tr>
-                   <th scope="row row-medical"><%= booking.start_time%></th>
-                   <th scope="row row-medical"><%= booking.name%></th>
+                   <th scope="row row-medical" style="font-weight: 200;"><%= booking.start_time.strftime("%Y-%m-%d") %></th>
+                   <th scope="row row-medical" style="font-weight: 200;"><%= booking.name %></th>
                  </tr>
                <% end %>
              </tbody>
            </table>
          </div>
-         <h4 id="h4-home2"><%= link_to "Ver todos", bookings_path%> </h4>
+         <div class="medical-imag">
+           <%= image_tag ("https://res.cloudinary.com/dmbtujt7l/image/upload/c_scale,w_117/v1674778200/4_f34g6x.png") %>
+         </div>
+         <div >
+           <h4><%= link_to "Ver todos", bookings_path, class:"boton-ver btn btn-primary"%></h4>
+         </div>
        </div>
       </div>
     </div>
