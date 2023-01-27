@@ -8,10 +8,11 @@
     <div class="card-booking-1" style="border: groove;">
       <div class="card-details-booking" style="width: 100%;">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong style="font-size: 1.5rem"><%= @booking.name %></strong></li>
-          <strong>Fecha: </strong><%= I18n.l(@booking.start_time, format: '%A, %d de %B de %Y') %><br><br>
-          <strong>Detalles: </strong><%= @booking.details %><br><br>
-          <strong>Dirección: </strong><%= @booking.address %>
+          <li class="list-group-item"><strong style="font-size: 1.7rem"><%= @booking.name %></strong></li>
+          <div><br><strong style="font-size: 1.2rem;margin-right: 0.4rem;">Fecha:   </strong><%= I18n.l(@booking.start_time, format: '%A, %d de %B de %Y') %><br><br></div>
+          <div><strong style="font-size: 1.2rem;margin-right: 0.4rem;">Hora: </strong><%= @booking.start_time.strftime("%H:%M") %><br><br></div>
+          <div><strong style="font-size: 1.2rem;margin-right: 0.4rem;">Detalles: </strong><%= @booking.details %><br><br></div>
+          <div><strong style="font-size: 1.2rem;margin-right: 0.4rem;">Dirección: </strong><%= @booking.address %></div>
 
           <%= link_to "Volver", bookings_path(@bookings), class: "btn btn-secondary" %>
         </ul>
@@ -21,7 +22,7 @@
 
 
     <div class="card-booking-2" style="border: groove;">
-      <div class="card-details-booking" style="width: 18rem;">
+      <div class="card-details-booking" style="width: 100%;">
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><strong style="font-size: 1.5rem"><%= @booking.name %></strong></li>
 
@@ -32,8 +33,7 @@
           <%= link_to "Volver", bookings_path(@bookings), class: "btn btn-secondary" %>
         </ul>
       </div>
-      <div class="img-booking" style="border-radius: 1rem;">
-      </div>
+
     </div>
 
   </div>
