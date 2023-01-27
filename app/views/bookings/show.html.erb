@@ -1,32 +1,30 @@
 <%= javascript_include_tag "image_zoom.js" %>
 <div class="no-wrap">
-    
+
   <div class="contenedor-booking">
     <h1 class="titulo-show-booking">Detalles de tu cita</h1>
   </div>
   <div class="contenedor-show-bookings vh-100">
     <div class="card-booking-1" style="border: groove;">
-      <div class="card-details-booking" style="width: 18rem;">
+      <div class="card-details-booking" style="width: 100%;">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong style="font-size: 1.5rem">Fecha</strong></li>
-          <%= @booking.start_time %>
-          <li class="list-group-item"><strong style="font-size: 1.5rem">Nombre estudio</strong></li>
-          <%= @booking.name %>
-          <li class="list-group-item"><strong style="font-size: 1.5rem">Lugar Estudio</strong></li>
-          <%= @booking.address %>
+          <li class="list-group-item"><strong style="font-size: 1.5rem"><%= @booking.name %></strong></li>
+          <strong>Fecha: </strong><%= I18n.l(@booking.start_time, format: '%A, %d de %B de %Y') %><br><br>
+          <strong>Detalles: </strong><%= @booking.details %><br><br>
+          <strong>Dirección: </strong><%= @booking.address %>
+
           <%= link_to "Volver", bookings_path(@bookings), class: "btn btn-secondary" %>
         </ul>
       </div>
-      <div class="img-booking" style="border-radius: 1rem;">
-      </div>
+
     </div>
 
 
     <div class="card-booking-2" style="border: groove;">
       <div class="card-details-booking" style="width: 18rem;">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong style="font-size: 1.5rem">Fecha</strong></li>
-          <%= @booking.start_time %>
+          <li class="list-group-item"><strong style="font-size: 1.5rem"><%= @booking.name %></strong></li>
+
           <li class="list-group-item"><strong style="font-size: 1.5rem">Nombre estudio</strong></li>
           <%= @booking.name %>
           <li class="list-group-item"><strong style="font-size: 1.5rem">Lugar Estudio</strong></li>

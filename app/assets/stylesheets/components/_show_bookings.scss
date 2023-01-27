@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem;
-    width: 35rem;
+    width: 30rem;
     position: relative;
     left: 4rem;
     top: -6rem;
@@ -53,7 +53,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem;
-    width: 35rem;
+    width: 40rem;
     position: relative;
     left: 4rem;
     top: -6rem;
@@ -62,6 +62,7 @@
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
+    margin-left: -5rem;
   }
 
   .card-booking:hover {
