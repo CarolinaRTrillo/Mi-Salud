@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div class="config-pagina">
+    <div class="config-pagina" style="display: flex;padding-top: 5rem;position: relative;">
       <%= render "shared/navbar" %>
         <% if current_user %>
         <% if params[:action] == "home" || params[:action] == "mi_salud" || params[:action] == "nosotros" || params[:action] == "contacto"%>
@@ -31,7 +31,9 @@
         <% end %>
       <% end %>
       <%= render "shared/flashes" %>
-      <%= yield %>
+      <div class="flex" style="flex: 1 1 100%;padding-top: 20px; margin-left:16.5%;">
+        <%= yield %>
+      </div>
     </div>
      <%= render "shared/footer"%>
   </body>
