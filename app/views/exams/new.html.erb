@@ -14,9 +14,9 @@
         <div>
           <%= simple_form_for @exam do |f| %>
 
-              <%= f.input :date, label: "Fecha",%>
-              <%= f.input :name,label: "Nombre", %>
-              <%= f.input :place, label: "Lugar", %>
+              <%= f.input :date, label: "Fecha"%>
+              <%= f.input :name,label: "Nombre" %>
+              <%= f.input :place, label: "Lugar" %>
               <%= f.input :photo, label: "Foto", as: :file %>
               <div class="mt-5">
                 <%= f.submit :Crear, class:"boton-1 btn btn-primary mb-4" %>
