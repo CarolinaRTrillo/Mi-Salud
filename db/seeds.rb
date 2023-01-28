@@ -207,7 +207,7 @@ puts "creados 8 exámenes médicos"
 habit = Habit.create!(
   user_id: user1.id,
   habit_type: "Tabaco",
-  quantity: 1,
+  quantity: 5,
   frequency: "Mensual"
 )
 

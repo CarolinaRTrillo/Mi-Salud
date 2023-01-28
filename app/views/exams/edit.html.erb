@@ -1,7 +1,4 @@
 <div class="no-wrap">
-  <div>
-    <%= render "shared/sidebar" %>
-  </div>
   <div class="contenedor mt-5 vh-100">
     <div class="card mt-5" style="width: 50rem">
       <div class="mb-5">
@@ -11,14 +8,11 @@
       </div>
       <div>
         <%= simple_form_for @exam do |f| %>
-          <%= f.label :nombre %>
-          <%= f.input :name%>
+          <%= f.input :name, label: "Nombre"%>
 
-          <%= f.label :fecha%>
-          <%= f.input :date %>
+          <%= f.input :date, label: "Fecha" %>
 
-          <%= f.label :Lugar %>
-          <%= f.input :place%>
+          <%= f.input :place, label: "Lugar"%>
           <div class="mt-5">
           <%= f.submit :Crear, class:"btn btn-primary btn-block" %>
           </div>
