@@ -6,7 +6,6 @@
   align-items: center;
   top: 60px;
   bottom: 60px;
-  margin-left: 5%;
 }
 
 .fondo {
@@ -20,12 +19,12 @@
 // }
 
 .boton-ver {
-    display: flex;
-    margin-right: 18rem;
-    margin-top: -2rem;
-    height: 3rem;
-    font-size: smaller;
-    border-color: #0fa89f;
+  display: flex;
+  margin-right: 18rem;
+  margin-top: -2rem;
+  height: 3rem;
+  font-size: smaller;
+  border-color: #0fa89f;
 }
 
 .cont-medical .card-medical {
@@ -35,8 +34,6 @@
   justify-content: space-between;
   padding: 1.25rem;
   width: 30rem;
-  position: relative;
-  left: 4rem;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
@@ -50,11 +47,11 @@
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.4);
 }
 
- .medical-imag {
+.medical-imag {
   display: flex;
-    margin-left: auto;
-    margin-top: -3rem;
-    margin-bottom: -4rem;
+  margin-left: auto;
+  margin-top: -3rem;
+  margin-bottom: -4rem;
 }
 
 .cont-medical .card-medical h3 {
@@ -73,10 +70,10 @@
 }
 .grafico-dona {
   width: 12rem;
-    margin-top: -16rem;
-    margin-bottom: -8rem;
-    display: flex;
-    margin-left: 13rem;
+  margin-top: -16rem;
+  margin-bottom: -8rem;
+  display: flex;
+  margin-left: 13rem;
 }
 
 .table-medical {
