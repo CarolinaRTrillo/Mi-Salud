@@ -2,10 +2,13 @@
  AOS.init();
 </script>
 <div class="no-wrap">
-  <div class="cont-medical mt-5" id= "'home2">
-  <h1 class="titulo-1"><%= current_user.name %>, estas son tus prescripciones:</h1>
-        <div style="display: flex;height: 11rem;justify-content: center; margin-left:-1.55rem">
-          <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
+  <div class="cont-medical mt-5" id="home2">
+
+    <div style="display: flex;height: 11rem;justify-content: center; margin-left:-1.55rem">
+      <div>
+         <h1 class="titulo-1"><%= current_user.name %>, estas son tus prescripciones:</h1>
+      </div>
+      <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
             <div style="margin-right: 2rem;">
               <h4 style="font-size: inherit;color: #6d6e6f;">Prescripciones totales: <%= @recipes.count %></h4>
             </div>
@@ -15,8 +18,11 @@
             <div style="margin-right: 2rem;">
               <h4 class="link-new-recipe" style="font-size: inherit;color: #6d6e6f;"> <%= link_to "Agregar prescripción", new_recipe_path, style: "font-size: inherit;color: #6d6e6f;" %> </h4>
             </div>
-          </div>
-        </div>
+      </div>
+    </div>
+
+
+
     <div class="row">
 
 
@@ -46,7 +52,7 @@
              </table>
          </div>
          <div class="medical-imag">
-           <%= image_tag ("https://res.cloudinary.com/dmbtujt7l/image/upload/c_scale,w_900/v1674846968/6_gnlztl.png") %>
+           <%= image_tag ("https://res.cloudinary.com/dmbtujt7l/image/upload/c_scale,w_117/v1674778200/2_tqeqea.png") %>
          </div>
          <div >
            <h4><%= link_to "Ver todos", exams_path, class:"boton-ver btn btn-primary"%></h4>
