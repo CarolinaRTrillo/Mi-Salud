@@ -4,21 +4,21 @@
           <div class="card shadow-2-strong" style="border-radius: 0.5rem;">
             <div class="card-body p-5 text-center" style="box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4); border-radius: 8px 8px 8px 8px;">
               <h3 class="mb-5">Editar Receta Médica</h3>
-              <div class="form-outline mb-4">
+              <div class="form-outline mb-4 form-edit">
                 <%= f.input :date,
                 label: "Fecha",
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "date", class:"form-control form-control-lg" } %>
               </div>
-              <div class="form-outline mb-4">
+              <div class="form-outline mb-4 form-edit">
                 <%= f.input :doctor_name,
                 label: "Doctor",
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "date", class:"form-control form-control-lg" } %>
               </div>
-              <div class="form-outline mb-4">
+              <div class="form-outline mb-4 form-edit">
                 <%= f.input :photo,
                 label: "Foto",
                 required: false,
