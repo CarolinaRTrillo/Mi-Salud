@@ -2,12 +2,13 @@
  AOS.init();
 </script>
 <div class="no-wrap">
+      <div>
+         <h1 class="titulo-1"> Buenos dias, <%= current_user.name %></h1>
+      </div>
   <div class="cont-medical mt-5" id="home2">
 
-    <div style="display: flex;height: 11rem;justify-content: center; margin-left:-1.55rem">
-      <div>
-         <h1 class="titulo-1"><%= current_user.name %>, estas son tus prescripciones:</h1>
-      </div>
+    <div style="display: flex;height: 11rem;justify-content: center; margin-left:-1.55rem;margin-top: -1rem;">
+
       <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
             <div style="margin-right: 2rem;">
               <h4 style="font-size: inherit;color: #6d6e6f;">Prescripciones totales: <%= @recipes.count %></h4>
