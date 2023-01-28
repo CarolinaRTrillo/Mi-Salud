@@ -1,8 +1,8 @@
 <div class="calendar-sizing">
       <div class="calendar-heading my-2">
-        <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view, class: 'btn button-16' %>
+        <%= link_to t('simple_calendar.previous', default: 'Anterior'), calendar.url_for_previous_view, class: 'btn button-16' %>
         <span class="calendar-title btn button-16"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
-        <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view, class: 'btn button-16' %>
+        <%= link_to t('simple_calendar.next', default: 'Siguiente'), calendar.url_for_next_view, class: 'btn button-16' %>
       </div>
       <%= link_to 'Agregar cita', new_booking_path, class: 'btn button-16' %>
   </div>
@@ -23,7 +23,7 @@
         <% date_range.each_slice(7) do |dates| %>
           <tr>
             <% dates.each do |date| %>
-              
+
               <%= content_tag :td, class: calendar.td_classes_for(date) do %>
                 <% passed_block.call date.day, sorted_events.fetch(date, []) %>
               <% end %>
