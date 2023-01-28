@@ -1,10 +1,9 @@
 <div class="habits-wraper">
   <div class="card-habits-principal ">
     <div class=" card-secundaria-habits">
-      <h1 class="titulo-1">Buenos dias, <%= current_user.name %>:</h1>
-        <h4 style="display: flex;justify-content: center;font-family: 'Montserrat';font-weight: 300;margin-bottom: -1rem">Estos son tus habitos</h4>
+      <h1 class="titulo-1"><%= current_user.name %>, estos son tus hábitos:</h1>
         <div style="display: flex;height: 11rem;justify-content: center;">
-          <div class="secondary-barra" style="margin-top: 3rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
+          <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
             <div style="margin-right: 2rem;">
               <h4 style="font-size: inherit;color: #6d6e6f;">Hábitos totales: <%= @habits.count %></h4>
             </div>
