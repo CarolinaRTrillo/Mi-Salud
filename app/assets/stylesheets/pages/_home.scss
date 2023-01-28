@@ -1,5 +1,5 @@
 // Specific CSS for your home-page
-p {
+.parrafo-home {
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -10,19 +10,15 @@ p {
   font-weight: 200;
 }
 
-.p-footer {
-  margin-right: 0px;
-  margin-top: 10px;
-}
-
 hr {
-  margin-bottom: -30px;
+  margin-bottom: 17px;
   height: 1px;
   margin-left: 0%;
   margin-right: 65%;
   background-color: #6a7075;
-  margin-top: 52px;
+  margin-top: 38px;
 }
+
 
 body {
   border-bottom: groove;
@@ -37,7 +33,7 @@ a {
 
 .titulo-home {
   font-size: 2.8125rem;
-  margin-top: 50px;
+  margin-top: 10px;
   font-weight: 400;
 }
 
@@ -61,32 +57,27 @@ a {
 
 .image-1-home {
   display: flex;
-  height: 250px;
   justify-content: right;
-  margin-left: 325px;
-  margin-top: 330px;
+  margin-left: 335px;
+  margin-top: 175px;
   position: relative;
-  left: -23px;
-  width: 416px;
-  height: 280px;
-  border-radius: 9px;
+  left: -63px;
 }
 
 .image-2-home {
   display: flex;
   position: absolute;
-  height: 290px;
-  left: 39rem;
-  margin-top: 70px;
-  border-radius: 9px;
+  height: 303px;
+  left: 44rem;
+  margin-top: 8px;
 }
 
 .image-3-home {
   display: flex;
   position: relative;
-  height: 496px;
-  margin-top: 13px;
-  left: -82px;
+  height: 479px;
+  margin-top: -63px;
+  left: -110px;
 }
 
 .image-4-home {
@@ -119,14 +110,14 @@ a {
   transition: width 0.15s;
   display: flex;
   margin-bottom: 5px;
-  margin-left: 116px;
+  margin-left: -166px !important;
 }
 
 .contenedor-section2 {
   transition: width 0.15s;
   display: flex;
   margin-bottom: 5px;
-  margin-left: 116px;
+  margin-left: -68px;
 }
 
 .contenedor-section3 {
@@ -142,8 +133,8 @@ a {
 }
 
 .py-5 {
-  padding-top: 7rem !important;
-  padding-bottom: 7rem !important;
+  padding-top: 4rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .btn {
@@ -171,9 +162,13 @@ a {
   height: 1590px;
 }
 
-.overflow-auto {
+.home-scroll{
   overflow: auto;
-  max-height: 600px;
+  max-height: 29rem;
+  margin-left: -5rem;
+  margin-right: 5rem;
+  margin-top: -5rem;
+
 }
 
 .footer {
