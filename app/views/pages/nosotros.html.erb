@@ -2,43 +2,43 @@
   AOS.init();
 </script> %>
 <div class="contenedor-principal" style="margin-left: -14rem;margin-top: -2rem;">
-  <div class="row ">
-    <div class="col-6" style="margin-top: 6rem;">
-      <h1 class="nosotros-header">Quienes somos</h1>
-      <p class="nosotros">
+  <div class="cards-div-nosotros">
+    <h1 class="nosotros-header">Quienes somos</h1>
+    <p class="nosotros">
       Somos un equipo de profesionales comprometidos con mejorar la salud de las personas mediante la tecnología.
       Enfocamos nuestros esfuerzos en desarrollar una plataforma online fácil de usar y segura para la gestión de estudios médicos.
       Nuestra aplicación permite a las personas subir, almacenar y compartir sus estudios médicos con sus médicos de manera segura, programar citas, ver resultados de estudios y llevar un control de su salud.
-      En nuestra plataforma también encontrarás una interfaz sencilla y fácil de usar, ademas de recordatorios y alertas para citas medicas y seguimiento de tus estudios. Sumate!</p>
+      En nuestra plataforma también encontrarás una interfaz sencilla y fácil de usar, ademas de recordatorios y alertas para citas medicas y seguimiento de tus estudios.</p>
     </div>
     <%= image_tag ("https://res.cloudinary.com/dmbtujt7l/image/upload/c_scale,w_800/v1674846968/6_gnlztl.png"), class:"radio-imagen-office col-6"  %>
   </div>
 
   <%# ACA EMPIEZAN LAS CARDS %>
 
-  <div class="cards-nosotros-div d-flex flex-wrap justify-content-center mx-auto mb-5">
+  <div class="cards-nosotros-div">
     <%# <div data-aos="flip-up"> %>
-      <%# <div class="column-nosotros-1"> %>
-        <div class="card mb-3 card-nosotros-tamaño m-5" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+      <div class="column-nosotros-1">
+        <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
           <div class="row g-0">
             <div class="col-md-4">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/caro_xzncd8.png", class:"radio-imagen" %>
             </div>
-            <div class="col-md-8">
-              <div class="card-body-nosotros">
-                <h2 class="card-title-nosotros-10">Carolina R. Trillo</h2>
-                <p id="card-title-caro">Cofundador & CEO</p>
-                <p id="description-card-caro">Experiencia internacional, trabajando y aprendiendo en entornos multiculturales. Apasionada de las soluciones informáticas.</p>
+              <div class="col-md-8">
+                <div class="card-body-nosotros">
+                  <h2 class="card-title-nosotros-10">Carolina R. Trillo</h2>
+                  <p id="card-title-caro">Cofundador & CEO</p>
+                  <p id="description-card-caro">Experiencia internacional, trabajando y aprendiendo en entornos multiculturales. Apasionada de las soluciones informáticas.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      <%# </div> %>
+      </div>
     <%# </div> %>
 
     <%# <div data-aos="flip-up"> %>
-      <%# <div class="column-nosotros-2"> %>
-        <div class="card mb-3 card-nosotros-tamaño m-5" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+      <div class="column-nosotros-2">
+        <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
           <div class="row g-0">
             <div class="col-md-4">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674609097/Foto_perfil_nljvbn.jpg", class:"radio-imagen" %>
@@ -52,12 +52,12 @@
             </div>
           </div>
         </div>
-      <%# </div> %>
+      </div>
     <%# </div> %>
 
     <%# <div data-aos="flip-up"> %>
-      <%# <div class="column-nosotros-3"> %>
-        <div class="card mb-3 card-nosotros-tamaño m-5" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+      <div class="column-nosotros-3">
+        <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
           <div class="row g-0">
             <div class="col-md-4">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/gaston_unqdqg.jpg", class:"radio-imagen" %>
@@ -71,12 +71,12 @@
             </div>
           </div>
         </div>
-      <%# </div> %>
+      </div>
     <%# </div> %>
 
     <%# <div data-aos="flip-up"> %>
-      <%# <div class="column-nosotros-4"> %>
-        <div class="card mb-3 card-nosotros-tamaño m-5" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
+      <div class="column-nosotros-4">
+        <div class="card mb-3 card-nosotros-tamaño" style="box-shadow: 0 19px 38px rgba(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);">
           <div class="row g-0">
             <div class="col-md-4">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/michelle_timwly.jpg", class:"radio-imagen" %>
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-      <%# </div> %>
+      </div>
     <%# </div> %>
   </div>
 </div>
