@@ -37,7 +37,7 @@ a {
 
 .titulo-home {
   font-size: 2.8125rem;
-  margin-top: 50px;
+  margin-top: 10px;
   font-weight: 400;
 }
 
@@ -60,33 +60,28 @@ a {
 }
 
 .image-1-home {
-  display: flex;
-  height: 250px;
-  justify-content: right;
-  margin-left: 325px;
-  margin-top: 330px;
-  position: relative;
-  left: -23px;
-  width: 416px;
-  height: 280px;
-  border-radius: 9px;
+      display: flex;
+    justify-content: right;
+    margin-left: 335px;
+    margin-top: 175px;
+    position: relative;
+    left: -63px;
 }
 
 .image-2-home {
-  display: flex;
-  position: absolute;
-  height: 290px;
-  left: 39rem;
-  margin-top: 70px;
-  border-radius: 9px;
+display: flex;
+    position: absolute;
+    height: 303px;
+    left: 44rem;
+    margin-top: 8px;
 }
 
 .image-3-home {
-  display: flex;
-  position: relative;
-  height: 496px;
-  margin-top: 13px;
-  left: -82px;
+     display: flex;
+    position: relative;
+    height: 479px;
+    margin-top: -63px;
+    left: -110px;
 }
 
 .image-4-home {
@@ -119,14 +114,15 @@ a {
   transition: width 0.15s;
   display: flex;
   margin-bottom: 5px;
-  margin-left: 116px;
+  margin-left: -166px !important;
 }
+
 
 .contenedor-section2 {
   transition: width 0.15s;
   display: flex;
   margin-bottom: 5px;
-  margin-left: 116px;
+  margin-left: -68px;
 }
 
 .contenedor-section3 {
@@ -142,8 +138,8 @@ a {
 }
 
 .py-5 {
-  padding-top: 7rem !important;
-  padding-bottom: 7rem !important;
+  padding-top: 4rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .btn {
@@ -173,7 +169,9 @@ a {
 
 .overflow-auto {
   overflow: auto;
-  max-height: 600px;
+  max-height: 29rem;
+  margin-left: -5rem;
+  margin-right: 5rem;
 }
 
 .footer {
