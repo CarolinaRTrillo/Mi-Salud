@@ -1,6 +1,3 @@
-<div>
-  <%= render "shared/sidebar" %>
-</div>
 <%= simple_form_for @recipe do |f| %>
       <div class="row py-5 justify-content-center align-items-center ">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -9,18 +6,21 @@
               <h3 class="mb-5">Editar Receta Médica</h3>
               <div class="form-outline mb-4">
                 <%= f.input :date,
+                label: "Fecha",
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "date", class:"form-control form-control-lg" } %>
               </div>
               <div class="form-outline mb-4">
                 <%= f.input :doctor_name,
+                label: "Doctor",
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "date", class:"form-control form-control-lg" } %>
               </div>
               <div class="form-outline mb-4">
                 <%= f.input :photo,
+                label: "Foto",
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "date", class:"form-control form-control-lg" } %>

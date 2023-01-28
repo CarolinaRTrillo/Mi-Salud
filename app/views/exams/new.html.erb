@@ -14,10 +14,10 @@
         <div>
           <%= simple_form_for @exam do |f| %>
 
-              <%= f.input :date%>
-              <%= f.input :name %>
-              <%= f.input :place %>
-              <%= f.input :photo, as: :file %>
+              <%= f.input :date, label: "Fecha",%>
+              <%= f.input :name,label: "Nombre", %>
+              <%= f.input :place, label: "Lugar", %>
+              <%= f.input :photo, label: "Foto", as: :file %>
               <div class="mt-5">
                 <%= f.submit :Crear, class:"boton-1 btn btn-primary mb-4" %>
                 <%= link_to "Volver", exams_path(@exams), class: "boton-1 btn btn-secondary mb-4" %>
