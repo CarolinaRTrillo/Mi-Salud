@@ -9,25 +9,21 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 .contenedor-exam{
-  margin-top: 6rem;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
+
 }
 .card-exam {
   display: flex;
-  padding: 20px;
   align-items: center;
-  justify-content: space-between;
   padding: 1.25rem;
   width: 45rem;
   position: relative;
-  left: 4rem;
   top: -6rem;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  overflow: hidden;
   text-align: center;
-  transition: all 0.25s;
 }
 .card-exam:hover {
   transform: translateY(-15px);
