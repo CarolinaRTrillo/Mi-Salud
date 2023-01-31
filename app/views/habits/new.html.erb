@@ -8,12 +8,12 @@
         <div class="card-habits-new" style="width: 50rem">
         <div class="mb-5">
           <h1 style="font-size: 2rem;font-family: montserrat;padding-top: 1.5rem;;font-weight: 500;">Hábitos principales</h1>
-          <h4 style="margin-top: 0%;font-family: montserrat;font-weight: 200;font-size: 1.2rem;">Personaliza tus habitos para poder llevar un registro de tu Salud</h4>
+          <h4 style="margin-top: 0%;font-family: montserrat;font-weight: 200;font-size: 1.2rem;">Personaliza tus hábitos para poder llevar un registro de tu Salud</h4>
           <div class="linea"></div>
         </div>
         <div>
           <%= simple_form_for @habit do |f| %>
-            <%= f.label :Habito %>
+            <%= f.label :Hábito %>
             <%= f.select :habit_type, collection: ["TABACO", "ALCOHOL", "CAFE", "ALIMENTACION", "EJERCICIO", "SUEÑO"] %>
 
             <%= f.label :Cantidad %>
