@@ -16,8 +16,7 @@
             <%= f.label :Hábito %>
             <%= f.select :habit_type, collection: ["TABACO", "ALCOHOL", "CAFE", "ALIMENTACION", "EJERCICIO", "SUEÑO"] %>
 
-            <%= f.label :Cantidad %>
-            <%= f.input :quantity %>
+            <%= f.input :quantity, label: "Cantidad" %>
 
             <%= f.label :Frecuencia, class: "etiqueta-frecuencia" %>
             <%= f.select :frequency, collection: ["Diario", "Fines de semana", "Habitual", "Ocacional", "Semanal", "Mensual"]%>
