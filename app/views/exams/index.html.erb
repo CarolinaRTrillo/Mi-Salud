@@ -1,17 +1,17 @@
 <div class="exams-wraper">
   <div class="card-exams-principal ">
     <div class=" card-secundaria-exams">
-      <h1 class="titulo-1"><%= current_user.name %>, estos son tus examenes:</h1>
+      <h1 class="titulo-1"><%= current_user.name %>, estos son tus exámenes:</h1>
         <div style="display: flex;height: 11rem;justify-content: center;margin-left: 2rem;">
           <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color: #0fa89f;align-items: center;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;margin-left: -2rem">
             <div style="margin-right: 2rem;">
-              <h4 style="font-size: inherit;color: white;">Examenes totales: <%= @exams.count %></h4>
+              <h4 style="font-size: inherit;color: white;">Exámenes totales: <%= @exams.count %></h4>
             </div>
             <div style="margin-right: 2rem;">
-              <h4 style="font-size: inherit;color: white;">Porcentaje Salud: 50%</h4>
+              <h4 style="font-size: inherit;color: white;">Porcentaje salud: 50%</h4>
             </div>
             <div style="margin-right: 2rem;">
-              <h4 style="font-size: inherit;color: white;"> <%= link_to "Agregar Examen", new_exam_path, style: "font-size: inherit;color: white;" %> </h4>
+              <h4 style="font-size: inherit;color: white;"> <%= link_to "Agregar exámen", new_exam_path, style: "font-size: inherit;color: white;" %> </h4>
             </div>
           </div>
         </div>
@@ -19,7 +19,7 @@
           <div class="card-exams overflow-auto" stytle="max-height: 29rem;box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);">
             <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674605688/healthy-habits_ffx7kd.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
-                  <h4 class="card-text-exams-1"> Tus examenes</h4>
+                  <h4 class="card-text-exams-1"> Tus exámenes</h4>
                   <%= link_to "+", new_exam_path, style: "text-align: center;margin-top: 1.3rem;font-size: 3rem;" %>
             </div>
                 <table class="table" style="font-size: 0.8rem;">
@@ -61,7 +61,7 @@
             <div class="card-exams" style="box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);">
               <div class="avatar1" style="display: grid;grid-template-columns: 0fr 1fr;border-bottom: inset;height: 7rem;">
                 <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610050/grafico-torta2_jvugzk.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
-                    <h4 class="card-text-exams-1" style="margin-left: 1.7rem"> Ultimos examenes</h4>
+                    <h4 class="card-text-exams-1" style="margin-left: 1.7rem"> Últimos exámenes</h4>
               </div>
 
                 <div class="minicards-principal-exams"  >
