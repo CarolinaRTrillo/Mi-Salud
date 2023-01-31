@@ -3,21 +3,21 @@
 </script>
 <div class="no-wrap">
       <div>
-         <h1 class="titulo-1"> Buenos dias, <%= current_user.name %></h1>
+         <h1 class="titulo-1"> Buenos días, <%= current_user.name %></h1>
       </div>
-  <div class="cont-medical mt-5" id="home2">
+  <div class="cont-medical" id="home2">
 
     <div style="display: flex;height: 11rem;justify-content: center; margin-left:-1.55rem;margin-top: -1rem;">
 
-      <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color#: f9f8f8;align-items: center;background: #f9f8f8;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
+      <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color: #0fa89f;align-items: center;border-radius: 60px;justify-content: center;display: flex; width: 43rem;">
             <div style="margin-right: 2rem;">
-              <h4 style="font-size: inherit;color: #6d6e6f;">Prescripciones totales: <%= @recipes.count %></h4>
+              <h4 style="font-size: inherit;color: white;">Prescripciones totales: <%= @recipes.count %></h4>
             </div>
             <div style="margin-right: 2rem;">
-              <h4 style="font-size: inherit;color: #6d6e6f;">Porcentaje Salud: 50%</h4>
+              <h4 style="font-size: inherit;color: white;">Porcentaje salud: 50%</h4>
             </div>
             <div style="margin-right: 2rem;">
-              <h4 class="link-new-recipe" style="font-size: inherit;color: #6d6e6f;"> <%= link_to "Agregar prescripción", new_recipe_path, style: "font-size: inherit;color: #6d6e6f;" %> </h4>
+              <h4 class="link-new-recipe" style="font-size: inherit;color: white;"> <%= link_to "Agregar prescripción", new_recipe_path, style: "font-size: inherit;color: white;" %> </h4>
             </div>
       </div>
     </div>
