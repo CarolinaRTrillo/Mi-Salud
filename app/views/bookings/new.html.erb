@@ -1,28 +1,29 @@
 <%= simple_form_for @booking do |f| %>
   <div class="contenedor h-100 cont-new-booking">
       <div class="row d-flex justify-content-center align-items-center h-110" style="width: 40rem;">
-        <div class="card-body p-5 text-center text-new-bookings" style="box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4); border-radius: 8px 8px 8px 8px;">
+        <div class="card-body p-5 text-center text-new-bookings" style="box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);border-radius: 1rem;;margin-top: 3rem;">
 
-          <h3 class="mb-5">Tu nueva cita</h3>
+          <h3 style="margin-bottom:1.5rem;">Nueva Cita</h3>
 
-          <div class="form-outline mb-4">
-          <%= f.input :name, label: "Nombre", class: "form-control form-control-lg" %>
+          <div style="font-size:1.3rem;">
+            <div class="form-outline mb-3">
+            <%= f.input :name, label: "Nombre", class: "form-control form-control-lg" %>
+            </div>
+
+            <div class="form-outline mb-3">
+            <%= f.input :start_time, label: "Tiempo de inicio", class:"form-control form-control-lg", html5:true %>
+            </div>
+
+            <div class="form-outline mb-3">
+            <%=  f.input :details, label: "Detalles", class: "form-control form-control-lg" %>
+            </div>
+
+            <div class="form-outline mb-3">
+            <%=  f.input :address, label: "Dirección", class: "form-control form-control-lg" %>
+            </div>
+
+            <%= f.button :submit, "Crear", class:"btn btn-primary btn-lg btn-block btn-new-booking" %>
           </div>
-
-          <div class="form-outline mb-4">
-          <%= f.input :start_time, label: "Tiempo de inicio", class:"form-control form-control-lg", html5:true %>
-          </div>
-
-          <div class="form-outline mb-4">
-          <%=  f.input :details, label: "Detalles", class: "form-control form-control-lg" %>
-          </div>
-
-          <div class="form-outline mb-4">
-          <%=  f.input :address, label: "Dirección", class: "form-control form-control-lg" %>
-          </div>
-
-            <%= f.button :submit, "Crear", class:"btn btn-primary btn-lg btn-block mt-3 btn-new-booking" %>
-
         </div>
       </div>
     </div>
