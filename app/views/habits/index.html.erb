@@ -1,7 +1,7 @@
 <div class="habits-wraper">
   <div class="card-habits-principal ">
-    <div class=" card-secundaria-habits">
-      <h1 class="titulo-1"><%= current_user.name %>, estos son tus hábitos:</h1>
+    <div class="card-secundaria-habits">
+        <h1 class="titulo-1"><%= current_user.name %>, estos son tus hábitos:</h1>
         <div style="display: flex;height: 11rem;justify-content: center;">
           <div class="secondary-barra d-flex justify-content-around" style="margin-top: 2rem;margin-bottom: 3rem;background-color: #0fa89f;align-items: center;border-radius: 60px;justify-content: center;display: flex;    width: 43rem;">
             <div>
@@ -15,71 +15,71 @@
             </div>
           </div>
         </div>
-        <div class="general-card">
+        <div class="general-card" style="width: 68rem;">
           <div class="card-habits" style="box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);">
             <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674605688/healthy-habits_ffx7kd.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
                   <h4 class="card-text-habitos-1"> Tus hábitos</h4>
                   <%= link_to "+", new_habit_path, style: "text-align: center;margin-top: 1.3rem;font-size: 3rem;" %>
             </div>
-                <div class="table-principal">
-                  <table class="table" style="font-weight: 100;font-family: 'Montserrat';;">
-                    <thead>
-                      <tr>
-                        <th scope="col">TIPO</th>
-                        <th scope="col">VALOR</th>
-                        <th scope="col">FRECUENCIA</th>
-                        <th scope="col">ACCIONES</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                      <% @habits.each do |habit|  %>
-                      <tr>
-                        <th scope="row" style="position: relative; text-align: left;"><%= habit.habit_type%></th>
-                        <td><%= habit.quantity %></td>
-                        <td><%= habit.frequency%></td>
+            <div class="table-principal" style="padding: 0rem;">
+              <table class="table" style="font-weight: 100;font-family: 'Montserrat'; font-size: 0.8rem;">
+                <thead>
+                  <tr>
+                    <th scope="col">TIPO</th>
+                    <th scope="col">VALOR</th>
+                    <th scope="col">FRECUENCIA</th>
+                    <th scope="col">ACCIONES</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <% @habits.each do |habit|  %>
+                  <tr>
+                    <th scope="row" style="position: relative; text-align: left;"><%= habit.habit_type%></th>
+                    <td><%= habit.quantity %></td>
+                    <td><%= habit.frequency%></td>
 
-                        <td><%= link_to habit_path(habit), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el habito?"} do %>
-                        <i class="fa-solid fa-trash" style="color: #f05168"></i>
-                        <% end %>
+                    <td><%= link_to habit_path(habit), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el habito?"} do %>
+                    <i class="fa-solid fa-trash" style="color: #f05168"></i>
+                    <% end %>
 
-                        | <%= link_to edit_habit_path(habit) do %>
-                        <i class="fa-solid fa-pencil" style="color: #ffcc07"></i>
-                        <% end %>
+                    | <%= link_to edit_habit_path(habit) do %>
+                    <i class="fa-solid fa-pencil" style="color: #ffcc07"></i>
+                    <% end %>
 
-                        | <%= link_to habit_path(habit) do %>
-                        <i class="fa-solid fa-eye"></i>
-                        <% end %>
-                        </td>
-                      </tr>
-                      <% end %>
-                    </tbody>
-                  </table>
-                </div>
+                    | <%= link_to habit_path(habit) do %>
+                    <i class="fa-solid fa-eye"></i>
+                    <% end %>
+                    </td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
           </div>
-            <div class="card-habits" style="box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);">
-              <div class="avatar1" style="display: grid;grid-template-columns: 0fr 1fr;border-bottom: inset;height: 7rem;">
-                <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610050/grafico-torta2_jvugzk.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
-                    <h4 class="card-text-habitos-1" style="margin-left: 1.7rem"> Tus resultados</h4>
-              </div>
-              <div class="grafico-dona-habitos">
-              <div>
-               <table class="table-medical-habito-2">
-             <tbody>
-               <% @habits.each do |habit|  %>
-                 <tr>
-                   <th scope="row row-medical" style="font-weight: 200"><%= habit.habit_type %></th>
-                 </tr>
-               <% end %>
-             </tbody>
-           </table>
-              </div>
+          <div class="card-habits" style="box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);">
+            <div class="avatar1" style="display: grid;grid-template-columns: 0fr 1fr;border-bottom: inset;height: 7rem;">
+              <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674610050/grafico-torta2_jvugzk.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
+                  <h4 class="card-text-habitos-1" style="margin-left: 1.7rem"> Tus resultados</h4>
+            </div>
+            <div class="grafico-dona-habitos">
+              <table class="table-medical-habito-2">
+                  <tbody>
+                    <% @habits.each do |habit|  %>
+                      <tr>
+                        <th scope="row row-medical" style="font-weight: 200"><%= habit.habit_type %></th>
+                      </tr>
+                    <% end %>
+                  </tbody>
+              </table>
+              <div style="margin-top: -4rem; margin-left: 3rem; width: 220px;">
                 <% @habits.last(1).each do |habit|  %>
                   <%= pie_chart Habit.group(:habit_type).limit(4).sum(:user_id), legend: false, colors: ["#FF5757", "#03989E", "#545454", "#00C2CB"], donut: true %>
                 <% end %>
               </div>
             </div>
+          </div>
         </div>
-      </div>
+    </div>
   </div>
 </div>
