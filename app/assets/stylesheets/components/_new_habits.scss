@@ -40,3 +40,23 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   background-color: #0fa89f;
 }
+
+.margenes {
+  margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 2rem;
+}
+
+#edit-habit{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  left: 15.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.25s;
+  padding-top: 0rem;
+
+}
