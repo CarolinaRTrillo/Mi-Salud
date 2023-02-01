@@ -3,14 +3,14 @@
     <div class=" card-secundaria-recipes">
       <h1 class="titulo-1"><%= current_user.name %>, estas son tus prescripciones:</h1>
         <div style="display: flex;height: 11rem;justify-content: center; margin-left:-1.55rem">
-          <div class="secondary-barra" style="margin-top: 2rem;margin-bottom: 3rem;background-color: #0fa89f;align-items: center;border-radius: 60px;justify-content: center;display: flex; width: 43rem;">
-            <div style="margin-right: 2rem;">
+          <div class="secondary-barra d-flex justify-content-around" style="margin-top: 2rem;margin-bottom: 3rem;background-color: #0fa89f;align-items: center;border-radius: 60px;justify-content: center;display: flex; width: 43rem;">
+            <div>
               <h4 style="font-size: inherit;color: white;">Prescripciones totales: <%= @recipes.count %></h4>
             </div>
-            <div style="margin-right: 2rem;">
+            <div>
               <h4 style="font-size: inherit;color: white;">Porcentaje salud: 50%</h4>
             </div>
-            <div style="margin-right: 2rem;">
+            <div>
               <h4 class="link-new-recipe" style="font-size: inherit;color: white;"> <%= link_to "Agregar prescripción", new_recipe_path, style: "font-size: inherit;color: white;" %> </h4>
             </div>
           </div>
