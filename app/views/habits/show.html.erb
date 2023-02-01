@@ -1,17 +1,18 @@
 <div class="no-wrap">
   <div class="contenedor mt-5 vh-100">
-    <div class="card mt-5" style="width: 50rem">
+    <div class="card mt-5" style="display: flex; align-items: center; padding: 1.25rem; width: 45rem; position: relative; top: -6rem; border-radius: 0.4rem; box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; text-align: center; left: 1.5rem;">
       <div class="mt-5 mb-5">
-      <h1>HABITO PERSONALIZADO</h1>
+      <h1>Hábito personalizado</h1>
       <div class="linea"></div>
-    </div>
-    <div class="card-body mt-1">
+      </div>
+      <div class="card-body mt-1">
       <h2>Tu hábito  <strong><%= @habit.habit_type%></strong></h2>
       <h2>actualmente tiene un valor de  <strong><%= @habit.quantity %></strong></h2>
       <h2>con una frecuencia de <strong><%= @habit.frequency%></strong></h2>
-    <div class="mt-5">
+      </div>
+      <div class="mt-5">
       <%= link_to "Volver", habits_path(@habits), class: "btn btn-secondary" %>
-    </div>
+      </div>
     </div>
   </div>
 </div>
