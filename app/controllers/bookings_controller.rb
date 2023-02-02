@@ -12,22 +12,26 @@ class BookingsController < ApplicationController
   end
 
   def show
-    @bookings = Booking.all
     @booking = Booking.find(params[:id])
 
     # The `geocoded` scope filters only flats with coordinates
-    @markers = @bookings.geocoded.map do |booking|
+    @markers =
       {
-        lat: booking.latitude,
-        lng: booking.longitude,
+        lat: @booking.latitude,
+        lng: @booking.longitude,
         # info_window_html: render_to_string(partial: "info_window", locals: {booking: booking})
       }
       #p @markers
-    end
   end
 
   def new
     @booking = Booking.new
+  end
+
+  def edit
+    @booking = Booking.find(params[:id])
+    @booking.update(booking_params)
+    redirect_to bookings_path(@booking)
   end
 
   def create
