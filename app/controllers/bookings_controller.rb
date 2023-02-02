@@ -8,7 +8,6 @@ class BookingsController < ApplicationController
     # For a monthly view:
     # @bookings = Booking.where(start_time: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
     # @bookings = Booking.where(start_time: start_date.beginning_of_week..start_date.end_of_week)
-
   end
 
   def show
@@ -28,20 +27,23 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
-  def edit
-    @booking = Booking.find(params[:id])
-    @booking.update(booking_params)
-    redirect_to bookings_path(@booking)
-  end
-
   def create
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     if @booking.save
       redirect_to bookings_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
+  end
+
+  def edit
+    @booking = Booking.find(params[:id])
+    @booking.update(booking_params)
+    redirect_to bookings_path
+  end
+
+  def update
   end
 
   def destroy
