@@ -17,7 +17,7 @@
           <div class="botones-show-booking">
             <%= link_to "Volver", bookings_path(@booking), class: "btn boton-1 btn btn-primary" %>
             <%= link_to "Editar", edit_booking_path(@booking), class: "btn boton-1 btn btn-primary" %>
-            <%= link_to "Eliminar", bookings_path(@booking), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el examen?"}, class: "btn boton-1 btn btn-primary" %>
+            <%= link_to "Eliminar", booking_path(@booking), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el examen?"}, class: "btn boton-1 btn btn-primary" %>
           </div>
         </ul>
         <div style="width: 100%; height: 600px;"
