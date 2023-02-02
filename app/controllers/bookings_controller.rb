@@ -8,18 +8,19 @@ class BookingsController < ApplicationController
     # For a monthly view:
     # @bookings = Booking.where(start_time: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
     # @bookings = Booking.where(start_time: start_date.beginning_of_week..start_date.end_of_week)
-    # The `geocoded` scope filters only flats with coordinates
-    @markers = @bookings.geocoded.map do |booking|
-      {
-        lat: booking.latitude,
-        lng: booking.longitude
-      }
-      p @markers
-    end
   end
 
   def show
     @booking = Booking.find(params[:id])
+
+    # The `geocoded` scope filters only flats with coordinates
+    @markers =
+      {
+        lat: @booking.latitude,
+        lng: @booking.longitude,
+        # info_window_html: render_to_string(partial: "info_window", locals: {booking: booking})
+      }
+      #p @markers
   end
 
   def new
@@ -32,11 +33,22 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to bookings_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
+  def update
+    @booking = Booking.find(params[:id])
+    @booking = @booking.update(booking_params)
+    redirect_to bookings_path
+  end
+
+  def edit
+    @booking = Booking.find(params[:id])
+  end
+
   def destroy
+    @booking = Booking.find(params[:id])
     @booking.destroy
     redirect_to bookings_path, status: :see_other
   end

@@ -1,28 +1,33 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   static values = {
     apiKey: String,
-    markers: Array
-  }
+    markers: Object,
+  };
 
   connect() {
-    mapboxgl.accessToken = this.apiKeyValue
+    console.log(this.markersValue);
+    mapboxgl.accessToken = this.apiKeyValue;
 
     this.map = new mapboxgl.Map({
       container: this.element,
-      style: "mapbox://styles/mapbox/streets-v10"
-    })
-     this.#addMarkersToMap()
+      style: "mapbox://styles/mapbox/streets-v10",
+    });
+    this.#addMarkersToMap();
+    this.#fitMapToMarkers();
   }
 
   #addMarkersToMap() {
-    console.log(this.markersValues)
-    this.markersValue.forEach((marker) => {
-      new mapboxgl.Marker()
-        .setLngLat([ marker.lng, marker.lat ])
-        .addTo(this.map)
-    })
+    console.log(this.markersValues);
+    new mapboxgl.Marker()
+      .setLngLat([this.markersValue.lng, this.markersValue.lat])
+      .addTo(this.map);
   }
 
+  #fitMapToMarkers() {
+    const bounds = new mapboxgl.LngLatBounds();
+    bounds.extend([this.markersValue.lng, this.markersValue.lat]);
+    this.map.fitBounds(bounds, { padding: 70, maxZoom: 13, duration: 0 });
+  }
 }
