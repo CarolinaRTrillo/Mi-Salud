@@ -11,13 +11,13 @@
 
       <div class="secondary-barra d-flex justify-content-around" style="margin-top: 2rem;margin-bottom: 3rem;background-color: #0fa89f;align-items: center;border-radius: 60px;justify-content: center;display: flex; width: 43rem;">
             <div>
-              <h4 style="font-size: inherit;color: white;">Prescripciones totales: <%= @recipes.count %></h4>
+              <h4 style="font-size: inherit;color: white;">Prescripciones totales: <%= @total_recipes.count %></h4>
             </div>
             <div>
-              <h4 style="font-size: inherit;color: white;">Porcentaje salud: 50%</h4>
+              <h4 style="font-size: inherit;color: white;">Habitos totales: <%= @total_habits.count %></h4>
             </div>
             <div>
-              <h4 class="link-new-recipe" style="font-size: inherit;color: white;"> <%= link_to "Agregar prescripción", new_recipe_path, style: "font-size: inherit;color: white;" %> </h4>
+              <h4 class="link-new-recipe" style="font-size: inherit;color: white;"> Examenes totales: <%= @total_exams.count %> </h4>
             </div>
       </div>
     </div>
