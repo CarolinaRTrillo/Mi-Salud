@@ -19,7 +19,8 @@
             <%= f.select :frequency, collection: ["No consume",
                                                   "1 taza al día",
                                                   "2 tazas al día",
-                                                  "3 o más tazas al día"]%>
+                                                  "3 o más tazas al día",
+                                                  "Sin informacion"]%>
             <div class="mt-5">
             <%= f.submit :Crear, class:"btn btn-secondary mb-4 me-2" %>
             <%= link_to "Volver", habits_path(@habits), class: "btn btn-secondary mb-4" %>
