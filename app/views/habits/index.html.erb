@@ -48,7 +48,7 @@
               </table>
               <div style="margin-top: -2rem; margin-left: 3rem; width: 220px;">
                 <% @habits.last(1).each do |habit|  %>
-                  <%= pie_chart Habit.group(:habit_type).limit(4).sum(:user_id), legend: false, colors: ["#FF5757", "#03989E", "#545454", "#00C2CB"], donut: true %>
+                  <%= pie_chart Habit.group(:habit_type).sum(:user_id), legend: false, colors: ["#FF5757", "#03989E", "#545454", "#00C2CB"], donut: true %>
                 <% end %>
               </div>
             </div>
