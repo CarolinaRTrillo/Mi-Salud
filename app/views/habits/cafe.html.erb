@@ -16,7 +16,10 @@
 
             <%= f.label :Frecuencia, class: "etiqueta-frecuencia" %>
             <%= f.input :habit_type, input_html: {value: "#{params[:habit]}"} %>
-            <%= f.select :frequency, collection: ["No Fumador", "Exfumador", "< 5 cig/día", "5 - 10 cig/día", "11 - 20 cig/día", "21 - 30 cig/día", "31 - 40 cig/día", "> 40 cig/día", "Fumador Social"]%>
+            <%= f.select :frequency, collection: ["No consume",
+                                                  "1 taza al día",
+                                                  "2 tazas al día",
+                                                  "3 o más tazas al día"]%>
             <div class="mt-5">
             <%= f.submit :Crear, class:"btn btn-secondary mb-4 me-2" %>
             <%= link_to "Volver", habits_path(@habits), class: "btn btn-secondary mb-4" %>
