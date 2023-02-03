@@ -5,6 +5,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get "habits/tabaco", to: "habits#tabaco"
+  get "habits/alcohol", to: "habits#alcohol"
+  get "habits/cafe", to: "habits#cafe"
+  get "habits/alimentacion", to: "habits#alimentacion"
+  get "habits/ejercicio", to: "habits#ejercicio"
+  get "habits/sueno", to: "habits#sueno"
   resources :bookings
   resources :reports
   resources :habits

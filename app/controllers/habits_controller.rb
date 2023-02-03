@@ -13,6 +13,30 @@ class HabitsController < ApplicationController
   def show
   end
 
+  def tabaco
+    @habit = Habit.new
+  end
+
+  def alcohol
+    @habit = Habit.new
+  end
+
+  def cafe
+    @habit = Habit.new
+  end
+
+  def alimentacion
+    @habit = Habit.new
+  end
+
+  def ejercicio
+    @habit = Habit.new
+  end
+
+  def sueno
+    @habit = Habit.new
+  end
+
   def create
     @habit = Habit.new(habit_params)
     @habit.user = current_user
@@ -41,7 +65,7 @@ class HabitsController < ApplicationController
   end
 
   def habit_params
-    params.require(:habit).permit(:habit_type, :quantity, :frequency)
+    params.require(:habit).permit(:frequency, :habit_type)
   end
 
 #   def percentage_completed

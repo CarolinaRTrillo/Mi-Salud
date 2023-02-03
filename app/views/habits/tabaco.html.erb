@@ -1,0 +1,30 @@
+<script>
+  AOS.init();
+</script>
+<div class="habits-new-wraper">
+  <div class="card-habits-principal-new">
+    <div class=" card-secundaria-habits-new">
+      <div data-aos="flip-left">
+        <div class="card-habits-new" style="width: 50rem">
+        <div class="mb-5">
+          <h1 style="font-size: 2rem;font-family: montserrat;padding-top: 1.5rem;;font-weight: 500;"><%= params[:habit].upcase%></h1>
+          <h4 style="margin-top: 0%;font-family: montserrat;font-weight: 200;font-size: 1.2rem;">Personaliza tus hábitos para poder llevar un registro de tu Salud</h4>
+          <div class="linea"></div>
+        </div>
+        <div  class="margenes">
+          <%= simple_form_for @habit do |f| %>
+
+            <%= f.label :Frecuencia, class: "etiqueta-frecuencia" %>
+            <%= f.input :habit_type, input_html: {value: "#{params[:habit]}"} %>
+            <%= f.select :frequency, collection: ["No Fumador", "Exfumador", "< 5 cig/día", "5 - 10 cig/día", "11 - 20 cig/día", "21 - 30 cig/día", "31 - 40 cig/día", "> 40 cig/día", "Fumador Social"]%>
+            <div class="mt-5">
+            <%= f.submit :Crear, class:"btn btn-secondary mb-4 me-2" %>
+            <%= link_to "Volver", habits_path(@habits), class: "btn btn-secondary mb-4" %>
+            </div>
+          <% end %>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
