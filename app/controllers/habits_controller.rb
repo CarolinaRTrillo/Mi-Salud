@@ -3,6 +3,13 @@ class HabitsController < ApplicationController
 
   def index
     @habits = current_user.habits
+    @tabaco = @habits.find_by(habit_type: "Tabaco")
+    @alcohol = @habits.find_by(habit_type: "Alcohol")
+    @cafe = @habits.find_by(habit_type: "Café")
+    @alimentacion = @habits.find_by(habit_type: "Alimentación")
+    @ejercicio = @habits.find_by(habit_type: "Ejercicio")
+    @sueno = @habits.find_by(habit_type: "Sueño")
+
     # @percentage_completed = percentage_completed
   end
 
@@ -38,13 +45,15 @@ class HabitsController < ApplicationController
   end
 
   def create
-    @habit = Habit.new(habit_params)
-    @habit.user = current_user
-    if @habit.save
-      redirect_to habits_path
+    @habit = Habit.find_by(habit_type: params[:habit_type])
+    if @habit
+      @habit.frecuency = params[:frecuency]
     else
-      render :new
+      @habit = Habit.new(habit_params)
+      @habit.user = current_user
     end
+    @habit.save
+    redirect_to habits_path
   end
 
   def update
