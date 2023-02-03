@@ -13,9 +13,9 @@
         </div>
         <div  class="margenes">
           <%= simple_form_for @habit do |f| %>
+            <%= f.input :habit_type, input_html: {value: "#{params[:habit]}"} %>
 
             <%= f.label :Frecuencia, class: "etiqueta-frecuencia" %>
-            <%= f.input :habit_type, input_html: {value: "#{params[:habit]}"} %>
             <%= f.select :frequency, collection: ["No Realizo Ejercicio",
                                                   "1 hs/dia Leve",
                                                   "1 hs/dia Moderada",
