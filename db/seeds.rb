@@ -7,23 +7,23 @@ Report.destroy_all
 User.destroy_all
 
 user1 = User.create!(
-  email: "franciscogiacchi@outlook.com",
+  email: "caroramireztrillo@gmail.com",
   password: "123456",
-  name: "Francisco",
-  last_name: "Giacchi",
+  name: "Carolina",
+  last_name: "Ramírez Trillo",
   address: "Mitre 315",
-  weight: "65",
-  height: "165",
-  date_of_birth: "1989-04-08",
-  gender: 1,
-  phone_number: "+5493435430718",
+  weight: "57",
+  height: "160",
+  date_of_birth: "1991-05-06",
+  gender: 0,
+  phone_number: "+5493434748413",
   blood_group: 0,
   blood_type: 0
 )
 # photo.attach nos hace usar cloudinary: config.active_storage.service = :cloudinary (linea 38 del development.rb)
 
-file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674609097/Foto_perfil_nljvbn.jpg")
-user1.photo.attach(io: file, filename: "fran.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674610666/caro_xzncd8.png")
+user1.photo.attach(io: file, filename: "caro.png", content_type: "image/png")
 puts "usuario: #{user1.email}"
 
 user2 = User.create!(
