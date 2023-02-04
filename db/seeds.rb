@@ -203,51 +203,6 @@ puts "creados 8 exámenes médicos"
 
 # HABITOS
 # habits: 4 a cada uno
-
-habit = Habit.create!(
-  user_id: user1.id,
-  habit_type: "Tabaco",
-  quantity: "5 cigarrillos",
-  frequency: "Mensual"
-)
-
-habit1 = Habit.create!(
-  user_id: user1.id,
-  habit_type: "Alcohol",
-  quantity: "2 vasos",
-  frequency: "Semanal"
-)
-
-habit2 = Habit.create!(
-  user_id: user1.id,
-  habit_type: "Café",
-  quantity: "1 taza",
-  frequency: "Diario"
-)
-
-habit3 = Habit.create!(
-  user_id: user1.id,
-  habit_type: "Alimentación",
-  quantity: "Alimentación equilibrada",
-  frequency: "Diario"
-)
-
-habit4 = Habit.create!(
-  user_id: user2.id,
-  habit_type: "Ejercicio",
-  quantity: "1 hora",
-  frequency: "Semanal"
-)
-
-habit5 = Habit.create!(
-  user_id: user2.id,
-  habit_type: "Sueño",
-  quantity: "8 horas",
-  frequency: "Diario"
-)
-
-puts "creados 8 habitos"
-
 # RECETAS
 # recipe: 2 recetas a user1 (buscar foto de receta medica y subir 2)
 

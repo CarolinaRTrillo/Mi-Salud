@@ -45,9 +45,10 @@ class HabitsController < ApplicationController
   end
 
   def create
-    @habit = Habit.find_by(habit_type: params[:habit_type])
+    @habit = Habit.find_by(habit_type: params[:habit][:habit_type])
+
     if @habit
-      @habit.frecuency = params[:frecuency]
+      @habit.frequency = params[:habit][:frequency]
     else
       @habit = Habit.new(habit_params)
       @habit.user = current_user
