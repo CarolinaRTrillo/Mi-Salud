@@ -2,7 +2,7 @@
   <div class="contenedor  vh-100">
     <div class="card" style="width: 50rem; margin-left: -7rem !important;">
       <div class="mb-5">
-        <h1>Examen actual</h1>
+        <h1 style="margin-top: 2.5rem;">Examen actual</h1>
         <h4>Actualiza los datos para poder llevar un mejor registro de tu Salud</h4>
         <div class="linea"></div>
       </div>
@@ -17,7 +17,7 @@
           <%= f.input :photo, label: "Foto", as: :file %>
 
           <div class="mt-5">
-          <%= f.submit :Editar, class:"btn btn-primary btn-block" %>
+          <%= f.submit :Guardar, class:"btn btn-primary btn-block", style:"margin-bottom: 1rem;" %>
           </div>
         <% end %>
       </div>
