@@ -20,67 +20,91 @@
             <div class="avatar1" style="display: grid;grid-template-columns: 1fr 2fr 1fr;border-bottom: inset;height: 7rem;">
               <%= image_tag "https://res.cloudinary.com/drd7kavdp/image/upload/v1674605688/healthy-habits_ffx7kd.png", class:"avatar-1", style:"border-radius:50%;height: 5rem;margin-left: 1rem;margin-top: 1rem;"%>
                   <h4 class="card-text-habitos-1"> Tus hábitos</h4>
-                  <%= link_to "+", edit_habit_path(@habits), style: "text-align: center;margin-top: 1.3rem;font-size: 3rem;" %>
-            </div>
-            <div class="habits-frecuency">
-            <span class="color-cards6"></span>
-              <%= link_to "Tabaco", habits_tabaco_path(habit: "Tabaco"), style:" margin-left: -20.8rem;"%>
 
-              <% if @tabaco %>
-                <%= @tabaco.frequency %>
-              <% else %>
-                <p>vacio</p>
-              <%end  %>
             </div>
-            <div class="habits-frecuency">
-            <span class="color-cards1"></span>
-              <%= link_to "Alcohol", habits_alcohol_path(habit: "Alcohol"),style:"margin-left: -19.8rem;"%>
-
-               <% if @alcohol %>
+            <div class="row habits-frecuency d-flex" >
+              <div class="col-1 color-cards6 ">
+              </div>
+              <div class="col-3" style="margin-left: -2rem;position: relative;top: 0.3rem;">
+                <%= link_to "Tabaco", habits_tabaco_path(habit: "Tabaco"), style:""%>
+              </div>
+              <div class="col-7 " style="text-align:end;position: relative;top: 0.7rem;">
+                <% if @tabaco %>
+                    <%= @tabaco.frequency %>
+                  <% else %>
+                    <p>vacio</p>
+                  <%end  %>
+              </div>
+            </div>
+            <div class="row habits-frecuency d-flex" >
+              <div class="col-1 color-cards1">
+              </div>
+              <div class="col-3" style="margin-left: -2rem;position: relative;top: 0.3rem;">
+                <%= link_to "Alcohol", habits_alcohol_path(habit: "Alcohol")%>
+              </div>
+              <div class="col-7 " style="text-align:end;position: relative;top: 0.7rem;">
+                <% if @alcohol %>
                 <%= @alcohol.frequency %>
                <% else %>
                 <p>vacio</p>
                <%end  %>
+              </div>
             </div>
-            <div class="habits-frecuency">
-            <span class="color-cards2"></span>
-              <%= link_to "Café", habits_cafe_path(habit: "Café"), style:"margin-left: -23.8rem;"%>
-               <% if @cafe %>
+            <div class="row habits-frecuency d-flex" >
+              <div class="col-1 color-cards2">
+              </div>
+              <div class="col-3" style="margin-left: -2rem;position: relative;top: 0.3rem;">
+                <%= link_to "Café", habits_cafe_path(habit: "Café")%>
+              </div>
+              <div class="col-7 " style="text-align:end;position: relative;top: 0.7rem;">
+                <% if @cafe %>
                 <%= @cafe.frequency %>
                <% else %>
                 <p>vacio</p>
                <%end  %>
-
+              </div>
             </div>
-            <div class="habits-frecuency">
-              <span class="color-cards3"></span>
-              <%= link_to "Alimentación", habits_alimentacion_path(habit: "Alimentación"), style:"margin-left: -17.8rem;" %>
+            <div class="row habits-frecuency d-flex" >
+              <div class="col-1 color-cards3 ">
+              </div>
+              <div class="col-3" style="margin-left: -2rem;position: relative;top: 0.3rem;">
+                <%= link_to "Alimentación", habits_alimentacion_path(habit: "Alimentación")%>
+              </div>
+              <div class="col-7 " style="text-align:end;position: relative;top: 0.1rem;">
                 <% if @alimentacion %>
                   <%= @alimentacion.frequency%>
                 <% else %>
                   <p>vacio</p>
                <% end  %>
+              </div>
             </div>
-            <div class="habits-frecuency">
-              <span class="color-cards4"></span>
-                <%= link_to "Ejercicio", habits_ejercicio_path(habit: "Ejercicio"), style:"margin-left: -16.8rem;" %>
-              <div>
-                <% if @ejercicio %>
+            <div class="row habits-frecuency d-flex" >
+              <div class="col-1 color-cards4 ">
+              </div>
+              <div class="col-3" style="margin-left: -2rem;position: relative;top: 0.3rem;">
+                <%= link_to "Ejercicio", habits_ejercicio_path(habit: "Ejercicio") %>
+              </div>
+              <div class="col-7 " style="text-align:end;position: relative;top: 0.7rem;">
+               <% if @ejercicio %>
                   <%= @ejercicio.frequency %>
                   <% else %>
                   <p>vacio</p>
                 <% end  %>
               </div>
             </div>
-
-            <div class="habits-frecuency">
-            <span class="color-cards5"></span>
-              <%= link_to "Sueño", habits_sueno_path(habit: "Sueño"), style:"margin-left: -22.8rem;"%>
-                 <% if @sueno %>
+              <div class="row habits-frecuency d-flex" >
+              <div class="col-1 color-cards5 ">
+              </div>
+              <div class="col-3" style="margin-left: -2rem;position: relative;top: 0.3rem;">
+                <%= link_to "Sueño", habits_sueno_path(habit: "Sueño")%>
+              </div>
+              <div class="col-7 " style="text-align:end;position: relative;top: 0.7rem;">
+               <% if @sueno %>
                   <%= @sueno.frequency %>
                  <% else %>
                   <p>vacio</p>
                  <% end  %>
+              </div>
             </div>
           </div>
           <div class="card-habits" style="box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);">
@@ -98,7 +122,7 @@
                     <% end %>
                   </tbody>
               </table>
-              <div style="margin-top: -2rem; margin-left: 3rem; width: 220px;">
+              <div style="margin-top: 1rem; margin-left: 3rem; width: 220px;">
                 <% @habits.last(1).each do |habit|  %>
                   <%= pie_chart Habit.group(:habit_type).limit(6).sum(:user_id), legend: false, colors: ["#FF5757", "#03989E", "#545454", "#00C2CB"], donut: true %>
                 <% end %>
